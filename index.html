@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your awesome title</title>
-    <!-- SEO -->
+    <!-- OpenGraph SEO. Note that og:image, og:video, etc support multiple instances. The media will be transformed in an array for social networks -->
+    <meta property="og:title" content="Your awesome title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:4000" /> <!-- Example -->
+    <meta property="og:image" content="https://1step.com/assets/img/example.jpg" />
+    <meta property="og:image:alt" content="Here you can put a description of the image" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- 
+        This could be usefull in the future :)
+        <meta property="og:video" content="" /> 
+    -->
+    <!-- Native SEO -->
     <meta name="robots" content="index, follow" />
     <meta name="description" content="Official website of 1Step: experts in web design" />
     <meta name="keywords" content="web, development, design, programming, service" /> <!-- Useless for Google -->
