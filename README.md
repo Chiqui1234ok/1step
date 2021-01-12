@@ -24,7 +24,7 @@ However, you can get a good experience (with minor centering problems in certain
 # Corrections after first meet
 
 Above code was "bad for SEO" and we changed first H2 by a P (paragraph).
-```
+```html
 <section id="services">
     <h2>Service</h2> <!-- This line was changed to P during first Google Meet -->
     <h2>
