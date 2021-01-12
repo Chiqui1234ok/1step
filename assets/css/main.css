@@ -30,6 +30,9 @@
     --animation-timing: .5s;
     --animation-timing-xl: 1s;
 }
+html {
+    scroll-behavior: smooth;
+}
 *, html, body {
     box-sizing: border-box;
 }
@@ -89,7 +92,7 @@ lead {
     color: var(--mainColor);
 }
 /* Helpers */
-ul.minimal, ol.minimal {list-style: none}
+ul.minimal, ol.minimal {list-style: none;padding: 0}
 ul.inline li, ol.inline li {display: inline-block}
 h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     text-align: center;

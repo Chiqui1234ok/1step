@@ -1,12 +1,12 @@
 /* Home */
 #home {
     width: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 60px);
     margin: 0;
 }
 #home .left {
     width: calc(100% - 20px);
-    min-height: 186px;
+    height: 100%;
     margin: calc(50vh - 95px) 0 0 0;
     float: left;
     background: var(--bgColor);
@@ -33,7 +33,7 @@
 }
 #home .image {
     width: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 60px);
     float: right;
     background-image: url('../img/home/bg.webp');
     position: absolute;
@@ -42,9 +42,6 @@
     z-index: -1;
 }
 @media (min-width: 1024px) {
-    #home {
-        min-height: 50vh;
-    }
     #home .left {
         width: 380px;
         margin: calc(25vh - 59px) 0 0 50px;
@@ -59,13 +56,13 @@
         font-size: 32px;
     }
     #home .image {
-        min-height: 50vh;
         position: relative;
         width: calc(100% - 380px - 50px);
     }
 }
 /* News */
 #news {
+    height: 60px;
     padding: 0 30px 0 30px;
     border-top: 1px solid var(--paleColor);
     border-bottom: 1px solid var(--paleColor);
@@ -106,7 +103,7 @@
 }
 /* Services */
 #services ul#basicServices {
-    width: 175px;
+    width: 400px;
     margin: 0 auto 80px auto;
     display: table;
 }
@@ -159,11 +156,12 @@
     color: var(--mainColor);
     margin: 27.5px 0 15px 0;
 }
-#services ul#conclusionServices.center.grid-3 {
+#services ul#conclusionServices.grid-3 {
     width: 315px;
     display: table;
     clear: both;
     margin: 0 auto;
+    padding: 0;
 }
 #services ul#conclusionServices li {
     width: 315px;
@@ -186,11 +184,10 @@
     background-image: url('../img/home/02_letterhead.webp'); /* IE11 doesn't support webp */
 }
 @media (min-width: 1280px) {
-    #services ul#conclusionServices.center.grid-3 {
+    #services ul#conclusionServices.grid-3 {
         width: 1060px;
         display: table;
         clear: both;
-        margin: 0 auto;
     }
     #services ul#conclusionServices li {
         width: 315px;
@@ -203,7 +200,23 @@
         margin: 55px 0 30px 0;
     }
     #services ul#conclusionServices.grid-3 {
-        width: 2040px;
+        width: 1750px;
+    }
+    #services ul#conclusionServices li {
+        width: 550px;
+        margin-right: 30px;
+    }
+    #services ul#conclusionServices li .image {
+        height: 416px;
+    }
+}
+@media (min-width: 3840px) {
+    #services ul#conclusionServices h3 {
+        color: var(--mainColor);
+        margin: 55px 0 30px 0;
+    }
+    #services ul#conclusionServices.grid-3 {
+        width: 2080px;
     }
     #services ul#conclusionServices li {
         width: 660px;
