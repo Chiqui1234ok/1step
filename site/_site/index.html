@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your awesome title</title>
+    <title>First Step Design</title>
     <!-- OpenGraph SEO. Note that og:image, og:video, etc support multiple instances. The media will be transformed in an array for social networks -->
-    <meta property="og:title" content="Your awesome title" />
+    <meta property="og:title" content="First Step Design" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://localhost:4000" /> <!-- Example -->
     <meta property="og:image" content="https://1step.com/assets/img/example.jpg" />
@@ -27,22 +27,58 @@
         Usefull for posts of the blog or any content with &copy
         <meta name="copyright" content="property" />
     -->
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet" />
     <!-- Basic CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- Google Fonts (later it'll be merged with "chunk.css" and fonts stored locally, not in Google CDN ) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-<header>
+<header id="header">
     <div class="logo"></div>
-    <nav>
-        <ul>
-            <li>
+    <div class="menu removeDesktop">
+        <a onclick="toggleSidebar()">☰</a>
+    </div>
+    <nav class="removeMobile">
+        <ul class="minimal inline">
+            <li class="active">
                 <a href="#" title="#">ABOUT US</a>
             </li>
-            <li>
+            <li class="megaMenu trigger">
                 <a href="#" title="#">SERVICE</a>
+                <div class="megaMenu grid-3">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <h2 class="en">WEBSITE PRODUCE</h2>
+                            <h2>Webサイト制作</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">WEBSITE SUPPORT</h2>
+                            <h2>Webサイトサポート</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">GRAPHIC PRODUCE</h2>
+                            <h2>フラフィック制作</h2>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <h2 class="en">LOGO DESIGN</h2>
+                            <h2>ロゴデザイン</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">CHARACTER / ILLUSTRATION</h2>
+                            <h2>イラスト・キャラクター</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">PHOTOGRAPHY</h2>
+                            <h2>写真撮影</h2>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a href="#" title="#">WORKS</a>
@@ -53,11 +89,42 @@
             <li>
                 <a href="#" title="#">PRICE</a>
             </li>
-            <li>
+            <li class="megaMenu trigger">
                 <a href="#" title="#">COMPANY</a>
+                <div class="megaMenu grid-3 last">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <h2 class="en">COMPANY GUIDE</h2>
+                            <h2>会社概要</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">COMPANY PHILOSOPHY</h2>
+                            <h2>会社理念</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">HISTORY</h2>
+                            <h2>沿革</h2>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <h2 class="en">MESSAGE</h2>
+                            <h2>代表者挨拶</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">STAFF</h2>
+                            <h2>スタッフ紹介</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">ACCESS</h2>
+                            <h2>アクセス</h2>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li>
-                <a href="#" title="#" class="button bright">TEXT</a>
+            <li style="height: 50px">
+                <a href="#" title="#" class="button header bright">無料見積もり</a>
             </li>
         </ul>
     </nav>
@@ -65,7 +132,7 @@
 <main>
 <section id="home">
     <div class="left">
-        <p>Business + Creativity = Success</p>
+        <p>BUSINESS + CREATIVITY = SUCCESS</p>
         <h1> 
             <!-- 
             For your business
@@ -80,71 +147,71 @@
 </section>
 
 <section id="news">
-    <ul class="pagenav divider">
-        <li>NEWS</li>
-        <li>2021.01.10</li>
-        <li>本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります</li>
-    </ul>
-    <ul class="nav simple">
-        <li class="prev">PREV</li>
-        <li class="next">NEXT</li>
-    </ul>
+        <ul class="minimal inline pagenav">
+            <li class="divider">NEWS</li>
+            <li>2021.01.10</li>
+            <li class="last">本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります</li>
+        </ul>
+        <ul class="minimal inline nav simple">
+            <li class="prev">PREV</li>
+            <li class="next">NEXT</li>
+        </ul>    
 </section>
 
 <section id="services">
-    <p>Service</p>
-    <h2>
+    <h2 class="en center">SERVICE</h2>
+    <h2 class="center">
         キレイなデザインは<br />
         当たり前のこと
     </h2>
-    <p>
+    <p class="center">
         WEB制作・ホームページ制作が得意なデザイン会社です。<br />
         デザインが良いのは当たり前、戦略的なWEB制作や作ってからの運用を大事にしています。
     </p>
-    <ul id="basicServices" class="grid-6 minimal inline"> <!-- grid-6 must be compatible with IE11-->
+    <ul id="basicServices" class="container grid-6 minimal inline"> <!-- grid-6 must be compatible with IE11-->
         <li class="webDesign">
-            <div class="icon"></div>
-            <strong>ホームページ制作</strong>
+            <div class="icon center"></div>
+            <p class="center"><strong>ホームページ制作</strong></p>
         </li>
         <li class="operationalSupport">
-            <div class="icon"></div>
-            <strong>運用サポート</strong>
+            <div class="icon center"></div>
+            <p class="center"><strong>運用サポート</strong></p>
         </li>
         <li class="printMedia">
-            <div class="icon"></div>
-            <strong>印刷物媒体</strong>
+            <div class="icon center"></div>
+            <p class="center"><strong>印刷物媒体</strong></p>
         </li>
         <li class="logoDesign">
-            <div class="icon"></div>
-            <strong>ロゴデザイン</strong>
+            <div class="icon center"></div>
+            <p class="center"><strong>ロゴデザイン</strong></p>
         </li>
         <li class="illustrationCharacter">
-            <div class="icon"></div>
-            <strong>イラストキャラクター</strong>
+            <div class="icon center"></div>
+            <p class="center"><strong>イラストキャラクター</strong></p>
         </li>
         <li class="photography">
-            <div class="icon"></div>
-            <strong>写真撮影</strong>
+            <div class="icon center"></div>
+            <p class="center"><strong>写真撮影</strong></p>
         </li>
     </ul>
-    <ul id="conclusion" class="minimal inline">
-        <li>
+    <ul id="conclusionServices" class="container center grid-3 minimal inline">
+        <li class="webDesign">
             <div class="image"></div>
-            <h3 class="title">ホームページ制作</h3>
+            <h3 class="center title">ホームページ制作</h3>
             <p class="details">
                 ホームページ等のウェブサイトをビジネスに活用することが当たり前となり、競合他社がひしめく現在のインターネット市場において、ウェブデザインは以前よりも重要性を増しています。
             </p>
         </li>
-        <li>
+        <li class="updateAndSupport">
             <div class="image"></div>
-            <h3 class="title">更新・運用・サポート</h3>
+            <h3 class="center title">更新・運用・サポート</h3>
             <p class="details">
                 ホームページ開設後の保守・メンテナンス等をお手伝いさせて頂いております。 他社が制作したホームページのご相談もお待ちしております。
             </p>
         </li>
-        <li>
+        <li class="graphicProduction last">
             <div class="image"></div>
-            <h3 class="title">グラフィック制作</h3>
+            <h3 class="center title">グラフィック制作</h3>
             <p class="details">
                 目的を達成し、成果を残す 本当の意味で高品質なデザインをアプローチの仕方や各印刷物媒体・ご予算などに応じて効果的なデザインをご提案します。
             </p>
@@ -154,12 +221,12 @@
 </section>
 
 <section id="works">
-    <p>Works</p>
-    <h2>
+    <h2 class="en center">WORKS</h2>
+    <h2 class="center">
         お客さまの成功は<br />
         僕らの自慢です
     </h2>
-    <p>
+    <p class="center">
         ホームページ制作など、さまざまなお客様のネットビジネスのお手伝いをさせて頂いております<br />
         お客様とともに築いてきた実績、それが私たちの誇りです。
     </p>
@@ -192,7 +259,7 @@
 <section id="aboutUs">
     <div class="image"></div>
     <div class="right">
-        <p>ABOUT US</p>
+        <h2 class="en">ABOUT US</h2>
         <h2>ファーストステップとは</h2>
         <p>
             テキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプル。
@@ -203,7 +270,7 @@
 
 <section id="productionFee">
     <div class="left">
-        <p>Production Fee</p>
+        <h2 class="en">PRODUCTION FEE</h2>
         <h2>価格の魅力的な理由。</h2>
         <p>
             テキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプル。
@@ -216,7 +283,7 @@
 <section id="blog">
     <div class="image">
         <div class="left">
-            <p>Blog</p>
+            <h2 class="en">BLOG</h2>
             <h2>好きな話を記事にしています。</h2>
             <p>
                 テキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプルテキスト入力サンプル。
@@ -261,7 +328,7 @@
 </section>
 
 <section id="flow">
-    <p>Flow</p>
+    <h2 class="en">FLOW</h2>
     <h2>
         自分の今は楽しく<br />
         歩もう
@@ -319,7 +386,7 @@
     <ul class="minimal inline">
         <li>
             <div class="image">
-                <p>Voice</p>
+                <p>VOICE</p>
                 <h2>お客様の声</h2>
             </div> <!-- pos: absolute -->
             <p>
@@ -329,8 +396,8 @@
         </li>
         <li>
             <div class="image">
-                <h2>Q&A</h2>
-                <h3>よくある質問</h3>
+                <p>Q&A</p>
+                <h2>よくある質問</h2>
             </div> <!-- pos: absolute -->
             <p>
                 お客様から寄せられたお問合せの一部とその回答を掲載しています。ご不明な点や、同じ不安を抱えていないかご確認ください。
@@ -342,25 +409,27 @@
 </main>
 
 <section id="contact">
-    <div class="left">
-        <p>Contact</p>
-        <h2>
-            伝えたいメッセージの<br />
-            魅力を引き出すデザイン
-        </h2>
-    </div>
-    <div class="right">
-        <button class="button bright icon email">お問い合わせ・無料見積もり</button>
+    <div class="center container">
         <div class="left">
-            <h4>お電話でのお問い合わせ</h4>
+            <h2 class="en">CONTACT</h2>
+            <h2>
+                伝えたいメッセージの<br />
+                魅力を引き出すデザイン
+            </h2>
         </div>
         <div class="right">
-            <p>
-                <i class="icon telephone"></i>
-                052-414-7327
-            </p>
+            <button class="button bright icon email">お問い合わせ・無料見積もり</button>
+            <div class="left">
+                <h4>お電話でのお問い合わせ</h4>
+            </div>
+            <div class="right">
+                <p>
+                    <i class="icon telephone"></i>
+                    052-414-7327
+                </p>
+            </div>
+            <p>※受付時間は9:00〜18:00　定休日は土日（年末年始を除く）</p>
         </div>
-        <p>※受付時間は9:00〜18:00　定休日は土日（年末年始を除く）</p>
     </div>
 </section>
 <footer>
@@ -479,3 +548,4 @@
 
 </body>
 </html>
+<script src="assets/js/headerCtrl.js"></script>

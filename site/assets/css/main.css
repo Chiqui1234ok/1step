@@ -1,15 +1,154 @@
+/* The styling is MOBILE-FIRST, so the @media queries are for control some elements while in larger screens only */
+@font-face {
+    font-family: 'Brandon Grotesque Bold';
+    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Brandon Grotesque Medium';
+    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+:root {
+    --mainColor: #021f59;
+    --planeColor: #0a4273;
+    --subColor: #275b88;
+    --pointColor: #047f8c;
+    --paleColor: #d7e2e4;
+    --bgColor: #ffffff;
+    --subBgColor: #ebf3f4;
+    --conversionColor: #a8d991;
+    /*  */
+    --animation-timing: .5s;
+    --animation-timing-xl: 1s;
+}
 *, html, body {
     box-sizing: border-box;
 }
+/* Common tags */
 body {
+    margin: 0;
 	overflow-x: hidden;
 	background: #eee;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Asap', sans-serif;
-    font-weight: 600;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+h2 {
+    /* margin: 60px 0 25px 0; */
+    margin: 0 0 25px 0;
+    color: var(--mainColor);
+    font-size: 22px;
+    line-height: 1.5em;
+}
+h2.en {
+    margin: 0 0 12px 0;
+    color: var(--subColor);
+    font-size: 11px;
+    letter-spacing: 3.5px;
+}
+h3 {
+    margin: 40px 0 20px 0;
+    font-size: 18px;
+}
+h4 {
+    margin: 30px 0 20px 0;
+    font-size: 16px;
+}
+h5 {
+    margin: 30px 0 20px 0;
+    font-size: 15px;
+    letter-spacing: 1.5px;
 }
 p {
-    font-family: 'Asap', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
+    margin: 20px 0 20px 0;
+}
+h4, h5, p {
+    color: var(--planeColor);
+}
+section {
+    margin: 80px 0 80px 0;
+    clear: both;
+}
+lead {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    margin: 60px 0 60px 0;
+    color: var(--mainColor);
+}
+/* Helpers */
+ul.minimal, ol.minimal {list-style: none}
+ul.inline li, ol.inline li {display: inline-block}
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
+    text-align: center;
+    display: block;
+}
+.icon.center {
+    margin: 0 auto;
+}
+.image {
+    background: none center / cover no-repeat;
+}
+/* Container */
+.container {
+    margin: 20px;
+    width: 60%;
+}
+/* Grid */
+[class*=grid] {display: table}
+.grid-2 > * {
+    width: 50%;
+    float: left;
+}
+.grid-3 > *, .grid-6 > * {
+    width: 1fr;
+    float: left;
+}
+.grid-2 > * { /* margin only for two first childs */
+    margin: 0 10px 0 10px;
+}
+.left {
+    width: 50%;
+    float: left;
+}
+.right {
+    width: 50%;
+    float: right;
+}
+/* Buttons */
+.button {
+    padding: 10px;
+    border: none; /* prevents border-bottom from some links */
+    display: block;
+    float: left;
+}
+.button:hover {
+    border: none; /* prevents border-bottom from some links */
+}
+.button.header {
+    width: 200px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+.button.default {
+    margin: 30px 0 30px 0;
+}
+.button.slim {
+    margin: 15px 0 15px 0;
+}
+.button.bright {
+    background: var(--conversionColor);
+    color: var(--bgColor);
 }

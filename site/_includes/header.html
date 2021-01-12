@@ -1,12 +1,46 @@
-<header>
+<header id="header">
     <div class="logo"></div>
-    <nav>
-        <ul>
-            <li>
+    <div class="menu removeDesktop">
+        <a onclick="toggleSidebar()">☰</a>
+    </div>
+    <nav class="removeMobile">
+        <ul class="minimal inline">
+            <li class="active">
                 <a href="#" title="#">ABOUT US</a>
             </li>
-            <li>
+            <li class="megaMenu trigger">
                 <a href="#" title="#">SERVICE</a>
+                <div class="megaMenu grid-3">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <h2 class="en">WEBSITE PRODUCE</h2>
+                            <h2>Webサイト制作</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">WEBSITE SUPPORT</h2>
+                            <h2>Webサイトサポート</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">GRAPHIC PRODUCE</h2>
+                            <h2>フラフィック制作</h2>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <h2 class="en">LOGO DESIGN</h2>
+                            <h2>ロゴデザイン</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">CHARACTER / ILLUSTRATION</h2>
+                            <h2>イラスト・キャラクター</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">PHOTOGRAPHY</h2>
+                            <h2>写真撮影</h2>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a href="#" title="#">WORKS</a>
@@ -17,11 +51,42 @@
             <li>
                 <a href="#" title="#">PRICE</a>
             </li>
-            <li>
+            <li class="megaMenu trigger">
                 <a href="#" title="#">COMPANY</a>
+                <div class="megaMenu grid-3 last">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <h2 class="en">COMPANY GUIDE</h2>
+                            <h2>会社概要</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">COMPANY PHILOSOPHY</h2>
+                            <h2>会社理念</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">HISTORY</h2>
+                            <h2>沿革</h2>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <h2 class="en">MESSAGE</h2>
+                            <h2>代表者挨拶</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">STAFF</h2>
+                            <h2>スタッフ紹介</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">ACCESS</h2>
+                            <h2>アクセス</h2>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li>
-                <a href="#" title="#" class="button bright">TEXT</a>
+            <li style="height: 50px">
+                <a href="#" title="#" class="button header bright">無料見積もり</a>
             </li>
         </ul>
     </nav>
