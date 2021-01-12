@@ -6,6 +6,14 @@ This project is based in Jekyll, so, the demo project is inside **_site** folder
 
 You can try a [demo](https://chiqui1234.github.io/1step/) here.
 
+# Build
+You need *Ruby* and *Ruby Gems* installed and in your OS and PATH. Then, you can execute these actions in a terminal (in this project directory):
+```bash
+gem install bundler jekyll
+cd site
+bundle exec jekyll serve # This will build the site and you can test a demo on localhost:4000
+```
+
 # Compatibility
 This template is fully-compatible with older web browsers, especifically: 
 * IE10 (late 2012)
