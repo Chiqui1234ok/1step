@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your awesome title</title>
+    <title>First Step Design</title>
     <!-- OpenGraph SEO. Note that og:image, og:video, etc support multiple instances. The media will be transformed in an array for social networks -->
-    <meta property="og:title" content="Your awesome title" />
+    <meta property="og:title" content="First Step Design" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://localhost:4000" /> <!-- Example -->
     <meta property="og:image" content="https://1step.com/assets/img/example.jpg" />
@@ -28,21 +28,57 @@
         Usefull for posts of the blog or any content with &copy
         <meta name="copyright" content="property" />
     -->
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet" />
     <!-- Basic CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- Google Fonts (later it'll be merged with "chunk.css" and fonts stored locally, not in Google CDN ) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
-<body><body><header>
+<body><body><header id="header">
     <div class="logo"></div>
-    <nav>
-        <ul>
-            <li>
+    <div class="menu removeDesktop">
+        <a onclick="toggleSidebar()">☰</a>
+    </div>
+    <nav class="removeMobile">
+        <ul class="minimal inline">
+            <li class="active">
                 <a href="#" title="#">ABOUT US</a>
             </li>
-            <li>
+            <li class="megaMenu trigger">
                 <a href="#" title="#">SERVICE</a>
+                <div class="megaMenu grid-3">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <h2 class="en">WEBSITE PRODUCE</h2>
+                            <h2>Webサイト制作</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">WEBSITE SUPPORT</h2>
+                            <h2>Webサイトサポート</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">GRAPHIC PRODUCE</h2>
+                            <h2>フラフィック制作</h2>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <h2 class="en">LOGO DESIGN</h2>
+                            <h2>ロゴデザイン</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">CHARACTER / ILLUSTRATION</h2>
+                            <h2>イラスト・キャラクター</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">PHOTOGRAPHY</h2>
+                            <h2>写真撮影</h2>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a href="#" title="#">WORKS</a>
@@ -53,11 +89,42 @@
             <li>
                 <a href="#" title="#">PRICE</a>
             </li>
-            <li>
+            <li class="megaMenu trigger">
                 <a href="#" title="#">COMPANY</a>
+                <div class="megaMenu grid-3 last">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <h2 class="en">COMPANY GUIDE</h2>
+                            <h2>会社概要</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">COMPANY PHILOSOPHY</h2>
+                            <h2>会社理念</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">HISTORY</h2>
+                            <h2>沿革</h2>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <h2 class="en">MESSAGE</h2>
+                            <h2>代表者挨拶</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">STAFF</h2>
+                            <h2>スタッフ紹介</h2>
+                        </li>
+                        <li>
+                            <h2 class="en">ACCESS</h2>
+                            <h2>アクセス</h2>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li>
-                <a href="#" title="#" class="button bright">TEXT</a>
+            <li style="height: 50px">
+                <a href="#" title="#" class="button header bright">無料見積もり</a>
             </li>
         </ul>
     </nav>
