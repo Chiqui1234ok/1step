@@ -1,37 +1,30 @@
 /* Home */
-#home {
+#intro {
     width: 100%;
+    padding: 0;
     height: calc(100vh - 60px);
     margin: 0;
 }
-#home .left {
-    width: calc(100% - 20px);
-    height: 100%;
+#intro .left {
+    width: calc(100% - 30px);
+    /* height: 100%; */
     margin: calc(50vh - 95px) 0 0 0;
     float: left;
     background: var(--bgColor);
     opacity: .85;
     padding: 30px 30px 0 30px;
 }
-#home .left p {
+#intro .left p {
     font-family: 'Brandon Grotesque Bold', sans-serif;
     color: var(--planeColor);
     margin: 0 0 20px 0;
     font-size: 20px;
 }
-#home .left h1 {
+#intro .left h1 {
     color: var(--mainColor);
     font-size: 32px;
 }
-@media (min-width: 1024px) {
-    #home .left p {
-        font-size: 30px;
-    }
-    #home .left h1 {
-        font-size: 38px;
-    }
-}
-#home .image {
+#intro .image {
     width: 100%;
     height: calc(100vh - 60px);
     float: right;
@@ -42,20 +35,20 @@
     z-index: -1;
 }
 @media (min-width: 1024px) {
-    #home .left {
+    #intro .left {
         width: 380px;
-        margin: calc(25vh - 59px) 0 0 50px;
+        margin: calc(50vh - 105px) 0 0 50px;
         background: none;
         opacity: 1;
         padding: 0;
     }
-    #home .left p {
+    #intro .left p {
         font-size: 16px;
     }
-    #home .left h1 {
+    #intro .left h1 {
         font-size: 32px;
     }
-    #home .image {
+    #intro .image {
         position: relative;
         width: calc(100% - 380px - 50px);
     }
@@ -237,6 +230,33 @@
 }
 #works p, #services p {
     margin: 0 0 80px 0;
+}
+#works ul.carouselWrapper {
+    width: 100%;
+}
+#works ul.carouselWrapper li {
+    width: 260px;
+}
+#works ul.carouselWrapper li.wrapper {
+    width: 260px;
+    background: var(--bgColor);
+    transition: var(--animation-timing-xl) ease-out;
+}
+#works ul.carouselWrapper li.wrapper:hover {
+    margin-top: -30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+#works ul.carouselWrapper li .image {
+    width: 260px;
+    height: 240px;
+    background-image: url('https://blog.hubspot.com/hubfs/design-projects.jpg');
+}
+#works ul.carouselWrapper li p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 25%;
+    padding: 0 15px 0 15px;
 }
 /* Q&A */
 #qa {
