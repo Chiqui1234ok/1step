@@ -4,13 +4,13 @@ This project is based in Jekyll, so, the demo project is inside **_site** folder
 * site
   * _site
 
+You can try a [demo](https://chiqui1234.github.io/1step/) here.
+
 # Compatibility
 This template is fully-compatible with older web browsers, especifically: 
 * IE10 (late 2012)
 * Safari 10.1 (early 2017)
 * Any newer browser, except **Opera Mini** (all versions), **Samsung Internet 4** (early 2016)
-
-**The title below needs verification** 👇
 
 However, you can get a good experience (with minor centering problems in certain elements) with:
 
