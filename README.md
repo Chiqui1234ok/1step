@@ -10,7 +10,7 @@ This template is fully-compatible with older web browsers, especifically:
 * Safari 10.1 (early 2017)
 * Any newer browser, except **Opera Mini** (all versions), **Samsung Internet 4** (early 2016)
 
-**Above text needs checking** 👇
+**The title below needs verification** 👇
 
 However, you can get a good experience (with minor centering problems in certain elements) with:
 
