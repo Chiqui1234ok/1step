@@ -113,7 +113,7 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
 }
 /* Grid */
 [class*=grid] {display: table}
-.grid-2 > * {
+.grid-2 > div, .grid-2 > section {
     width: 50%;
     float: left;
 }
@@ -153,9 +153,6 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     float: none;
     padding: 10px 30px 10px 30px;
 }
-    .button.header:hover {
-        border-bottom: none; /* prevents border-bottom from some links */
-    }
 .button.default {
     height: 60px;
     margin: 30px 0 30px 0;

@@ -14,6 +14,9 @@ header {
     z-index: 99;
     transition: var(--animation-timing) ease-out;
 }
+header .noBorder:hover {
+    border: none
+}
 header.alt {
     padding: 30px;
 }
@@ -66,7 +69,7 @@ header nav ul li:hover, header nav ul li.active {
     border-bottom: 5px solid transparent;
 } */
 /* Mega menu */
-header nav ul li.megaMenu.trigger .megaMenu {
+header nav ul li.trigger .megaMenu {
     width: 780px; /* 690px base + 60px (total) margin-left from column 2 & 3 + 30px margin-right from column 3 */
     height: 330px;
     /* margin-top: 30px; */
@@ -78,10 +81,10 @@ header nav ul li.megaMenu.trigger .megaMenu {
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     background: var(--bgColor);
 }
-header nav ul li.megaMenu.trigger .megaMenu.last {
-    left: -475px;
+header nav ul li.trigger .megaMenu.last {
+    left: -520px;
 }
-header nav ul li.megaMenu.trigger .megaMenu::before { /* This is a big placeholder. In case the user has a shaking hand, this big div will prevent the exit of the Mega Menu, thanks to their massive size*/
+header nav ul li.trigger .megaMenu::before { /* This is a big placeholder. In case the user has a shaking hand, this big div will prevent the exit of the Mega Menu, thanks to their massive size*/
     width: 780px;
     height: 50px;
     position: absolute;
@@ -94,7 +97,7 @@ header nav ul li.megaMenu.trigger .megaMenu::before { /* This is a big placehold
         Just for debugging :)
      */
 }
-header nav ul li.megaMenu.trigger .megaMenu::after, header nav ul li.megaMenu.trigger .megaMenu.last::after {
+header nav ul li.trigger .megaMenu::after, header nav ul li.trigger .megaMenu.last::after {
     width: 20px;
     height: 20px;
     background: var(--bgColor);
@@ -108,42 +111,42 @@ header nav ul li.megaMenu.trigger .megaMenu::after, header nav ul li.megaMenu.tr
     margin-left: 390px;
     z-index: -1;
 }
-header nav ul li.megaMenu.trigger .megaMenu.last::after {
+header nav ul li.trigger .megaMenu.last::after {
     margin-left: 580px;
 }
-header nav ul li.megaMenu.trigger:hover .megaMenu {
+header nav ul li.trigger:hover .megaMenu {
     display: block;
 }
-header nav ul li.megaMenu.trigger .megaMenu h2.en {
+header nav ul li.trigger .megaMenu h2.en {
     margin: 0 0 10px 0;
     font-size: 11px;
     font-family: 'Brandon Grotesque Bold', sans-serif;
 }
-header nav ul li.megaMenu.trigger .megaMenu h2 {
+header nav ul li.trigger .megaMenu h2 {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
 }
-header nav ul li.megaMenu.trigger .megaMenu.grid-3 .left.image {
+header nav ul li.trigger .megaMenu.grid-3 .left.image {
     width: 290px;
     height: 330px;
     background: url('https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FTEL.2Enews.2F2018.2F01.2F11.2Fe06eaeba-4a71-4fb2-8ef8-7c20ab04de9b.2Ejpeg/1200x600/crop-from/top/quality/80/steve-carell-annonce-le-retour-de-the-office-et-twitter-part-en-vrille.jpg') center / cover no-repeat;
 }
-header nav ul li.megaMenu.trigger .megaMenu.grid-3 .center, header nav ul li.megaMenu.trigger .megaMenu.grid-3 .right {
+header nav ul li.trigger .megaMenu.grid-3 .center, header nav ul li.trigger .megaMenu.grid-3 .right {
     width: 200px; /* +10px because I need room for li:hover */
     margin: 50px 0 0 30px;
 }
-header nav ul li.megaMenu.trigger .megaMenu.grid-3 .right {
+header nav ul li.trigger .megaMenu.grid-3 .right {
     margin: 50px 30px 0 0 !important;
 }
-header nav ul li.megaMenu.trigger .megaMenu ul li {
+header nav ul li.trigger .megaMenu ul li {
     width: calc(100% + 10px);
     transition: all var(--animation-timing) ease-out;
     margin: 0 0 50px 0;
     text-align: left;
     padding-bottom: 0;
 }
-header nav ul li.megaMenu.trigger .megaMenu ul li:hover {
+header nav ul li.trigger .megaMenu ul li:hover {
     padding-left: 10px;
     border-bottom: none;
 }
@@ -160,6 +163,9 @@ header nav ul li.megaMenu.trigger .megaMenu ul li:hover {
     }
     header .removeDesktop {
         display: none;
+    }
+    header nav {
+        margin-top: 5px;
     }
     header.alt {
         background: var(--bgColor);

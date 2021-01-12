@@ -1,0 +1,21 @@
+/* Contact */
+#contact {
+    width: 100%;
+    min-height: 520px;
+    padding: 100px 0 100px 0;
+    background: url('../img/home/img-2.webp') center / cover no-repeat;
+}
+#contact * {
+    color: var(--bgColor);
+}
+#contact div.center {
+    margin: 0 auto;
+    display: table;
+}
+#contact .left h2.en {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+#contact .left h2 {
+    margin: 0;
+}
