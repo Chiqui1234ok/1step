@@ -18,6 +18,8 @@ However, you can get a good experience (with minor centering problems in certain
 * Chrome 56 (early 2017) and older
 * Firefox 51 (early 2017) and older
 * Safari 10 (late 2016) and older
+* Opera Mini (any version)
+* Samsung Internet 4 (early 2016)
 
 # Corrections after first meet
 
