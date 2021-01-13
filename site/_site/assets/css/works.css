@@ -24,7 +24,7 @@
 }
 #works ul.carouselWrapper li.wrapper:hover {
     margin-top: -30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 20px var(--shadow);
 }
 #works ul.carouselWrapper li .image {
     width: 260px;

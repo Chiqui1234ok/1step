@@ -30,6 +30,7 @@
     <!-- Basic CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
     <link rel="stylesheet" href="assets/css/news.css" />
     <link rel="stylesheet" href="assets/css/intro.css" />
     <link rel="stylesheet" href="assets/css/services.css" />
@@ -52,10 +53,10 @@
     <nav class="removeMobile">
         <ul class="minimal inline">
             <li class="active">
-                <a href="#" title="#">ABOUT US</a>
+                <a href="#aboutUs" title="#">ABOUT US</a>
             </li>
             <li class="trigger">
-                <a href="#" title="#">SERVICE</a>
+                <a href="#services" title="#">SERVICE</a>
                 <div class="megaMenu grid-3">
                     <div id="aboutUsImage" class="left image"></div>
                     <ul class="center minimal">
@@ -89,16 +90,16 @@
                 </div>
             </li>
             <li>
-                <a href="#" title="#">WORKS</a>
+                <a href="#works" title="#">WORKS</a>
             </li>
             <li>
-                <a href="#" title="#">FLOW</a>
+                <a href="#flow" title="#">FLOW</a>
             </li>
             <li>
-                <a href="#" title="#">PRICE</a>
+                <a href="#productionFee" title="#">PRICE</a>
             </li>
             <li class="trigger">
-                <a href="#" title="#">COMPANY</a>
+                <a href="#contact" title="#">COMPANY</a>
                 <div class="megaMenu grid-3 last">
                     <div id="aboutUsImage" class="left image"></div>
                     <ul class="center minimal">
@@ -137,6 +138,37 @@
         </ul>
     </nav>
 </header>
+<div id="sidebar">
+    <div class="grid-2">
+        <div class="left">
+            <ul class="minimal inline">
+                <li>
+                    <a href="#aboutUs" title="#" onclick="toggleSidebar()">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#services" title="#" onclick="toggleSidebar()">SERVICE</a>
+                </li>
+                <li>
+                    <a href="#works" title="#" onclick="toggleSidebar()">WORKS</a>
+                </li>
+            </ul>
+            <div class="separator removeMobile"></div>
+            <ul class="minimal inline">
+                <li>
+                    <a href="#flow" title="#" onclick="toggleSidebar()">FLOW</a>
+                </li>
+                <li>
+                    <a href="#productionFee" title="#" onclick="toggleSidebar()">PRICE</a>
+                </li>
+                <li>
+                    <a href="#contact" title="#" onclick="toggleSidebar()">COMPANY</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="image"></div>
+    </div>
+</div>
 <main>
     <section id="intro">
     <div class="left">
@@ -162,6 +194,7 @@
     <ul class="minimal inline nav simple">
         <li class="prev">PREV</li>
         <li class="next">NEXT</li>
+        <li class="menu"></li>
     </ul>    
 </section>
     <section id="services">
@@ -554,3 +587,4 @@
 </body>
 </html>
 <script src="assets/js/headerCtrl.js"></script>
+<script src="assets/js/sidebarCtrl.js"></script>

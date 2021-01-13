@@ -16,6 +16,7 @@
     --bgColor: #ffffff;
     --subBgColor: #ebf3f4;
     --conversionColor: #a8d991;
+    --shadow: rgba(0, 0, 0, .5);
     /*  */
     --animation-timing: .5s;
     --animation-timing-xl: 1s;
@@ -73,6 +74,11 @@ p {
 h4, h5, p {
     color: var(--planeColor);
 }
+a {
+    color: var(--pointColor);
+    text-decoration: none;
+    cursor: pointer;
+}
 section ul h3.title {
     color: var(--mainColor);
     font-family: noto-sans-cjk-jp, sans-serif;
@@ -96,8 +102,18 @@ lead {
     color: var(--mainColor);
 }
 /* Helpers */
-ul.minimal, ol.minimal {list-style: none;padding: 0}
-ul.inline li, ol.inline li {display: block; float: left;}
+ul.minimal, ol.minimal {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+ul.inline, ol.inline {
+    display: table;
+}
+ul.inline li, ol.inline li {
+    display: block;
+    float: left;
+}
 h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     text-align: center;
     display: block;
@@ -108,13 +124,33 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
 .image {
     background: none center center / cover no-repeat;
 }
+.separator {
+    width: 80%;
+    height: 1px;
+    margin: 20px auto 20px auto;
+    background: linear-gradient(90deg, transparent 0%, var(--planeColor) 50%, transparent 100%);
+}
+/* Navigation */
+ul li.prev {
+    position: relative;
+}
+ul li.prev::before {
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    display: block;
+    content: "";
+    background: url('../img/icon/arrow-right-white.svg') center / contain no-repeat;
+}
 /* Container */
 .container {
     margin: 20px;
     width: 60%;
 }
 /* Grid */
-[class*=grid] {display: table}
+[class*=grid] {display: table;width: 100%}
 .grid-2 > div, .grid-2 > section {
     width: 50%;
     float: left;
@@ -136,7 +172,7 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
 }
 /* Buttons */
 .button {
-    min-width: 25%;
+    min-width: 215px;
     clear: both;
     padding: 20px;
     border: none; /* prevents border-bottom from some links */
@@ -148,7 +184,16 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     .button.center {
         margin: 30px auto 30px auto !important;
     }
-
+@media (min-width: 520px) {
+    .button {
+        min-width: 315px;
+    }
+}
+@media (min-width: 1024px) {
+    .button {
+        min-width: 25%;
+    }
+}
 .button.header {
     margin-top: -10px;
     text-align: center;

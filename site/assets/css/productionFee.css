@@ -28,11 +28,12 @@
     margin: 80px 0 80px 0; /* supplement */
 }
 #productionFee .image {
-    width: 90%;
+    width: calc(100% - 58px);
     height: 500px;
     clear: both;
     margin: 0;
     background-image: url('../img/home/product.webp');
+    background-position: left center;
     float: right;
 }
 #productionFee .left {
