@@ -16,22 +16,22 @@
     /* border-radius: 100%; */
 }
 #services ul#basicServices li.webDesign .icon {
-    background-image: url('../img/icon/service-1.svg');
+    background-image: url('../img/home-icon/service-1.svg');
 }
 #services ul#basicServices li.operationalSupport .icon {
-    background-image: url('../img/icon/service-2.svg');
+    background-image: url('../img/home-icon/service-2.svg');
 }
 #services ul#basicServices li.printMedia .icon {
-    background-image: url('../img/icon/service-3.svg');
+    background-image: url('../img/home-icon/service-3.svg');
 }
 #services ul#basicServices li.logoDesign .icon {
-    background-image: url('../img/icon/service-4.svg');
+    background-image: url('../img/home-icon/service-4.svg');
 }
 #services ul#basicServices li.illustrationCharacter .icon {
-    background-image: url('../img/icon/service-5.svg');
+    background-image: url('../img/home-icon/service-5.svg');
 }
 #services ul#basicServices li.photography .icon {
-    background-image: url('../img/icon/service-6.svg');
+    background-image: url('../img/home-icon/service-6.svg');
 }
 #services ul#basicServices li p {
     margin-top: 20px;
