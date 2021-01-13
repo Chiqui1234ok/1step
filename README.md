@@ -57,6 +57,6 @@ However, in the mockup that title (and many others) shows the following text: "H
 
 * Section: Works
 * Sidebar for responsive mode
-* Compatibility mode (images format, HTML and CSS interpretation check and so on) for IE11
-* Check typos, sizes and revisit entire project
+* Compatibility mode (images format, usage of @supports & code interpretation check) for IE11
+* Check typos, sizes, margins and revisit entire project
 * Image optimizations for mobile and desktop 
