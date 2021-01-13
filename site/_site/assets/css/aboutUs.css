@@ -7,7 +7,7 @@
     margin: 80px 0 80px 0; /* supplement */
 }
 #aboutUs .image {
-    width: 90%;
+    width: calc(100% - 58px);
     height: 500px;
     clear: both;
     margin: 0;
