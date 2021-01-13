@@ -1,22 +1,12 @@
 /* The styling is MOBILE-FIRST, so the @media queries are for control some elements while in larger screens only */
-@font-face {
-    font-family: 'Brandon Grotesque Bold';
-    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-@font-face {
-    font-family: 'Brandon Grotesque Medium';
-    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../font/BrandonGrotesque-Bold_transat-bold-webfont') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../font/BrandonGrotesque-Bold_transat-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+/*
+    Brandon Grotesque Medium, brandon-grotesque, weight 500
+    Brandon Grotesque Bold, brandon-grotesque, weight 700
+    Noto Sans CJK JP Bold, noto-sans-cjk-jp, weigth 700
+    Noto Sans CJK JP Medium, noto-sans-cjk-jp, weigth 500
+    Noto Sans CJK JP Regular, noto-sans-cjk-jp, weigth 400
+*/
+
 :root {
     --mainColor: #021f59;
     --planeColor: #0a4273;
@@ -26,6 +16,7 @@
     --bgColor: #ffffff;
     --subBgColor: #ebf3f4;
     --conversionColor: #a8d991;
+    --shadow: rgba(0, 0, 0, .5);
     /*  */
     --animation-timing: .5s;
     --animation-timing-xl: 1s;
@@ -40,10 +31,10 @@ html {
 body {
     margin: 0;
 	overflow-x: hidden;
-	background: #eee;
+	background: var(--bgColor);
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 700;
     letter-spacing: 1.7px;
 }
@@ -67,11 +58,13 @@ h3 {
 h4 {
     margin: 30px 0 20px 0;
     font-size: 16px;
+    font-weight: 500;
 }
 h5 {
     margin: 30px 0 20px 0;
     font-size: 15px;
     letter-spacing: 1.5px;
+    font-weight: 400;
 }
 p {
     font-family: 'Noto Sans JP', sans-serif;
@@ -81,8 +74,25 @@ p {
 h4, h5, p {
     color: var(--planeColor);
 }
+a {
+    color: var(--pointColor);
+    text-decoration: none;
+    cursor: pointer;
+}
+section ul h3.title {
+    color: var(--mainColor);
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+    margin: 27.5px 0 15px 0;
+}
+section ul p.details {
+    font-family: noto-sans-cjk-jp,sans-serif;
+    font-weight: 400;
+}
 section {
-    margin: 80px 0 80px 0;
+    width: 100%;
+    display: table;
+    padding: 80px 0 80px 0;
     clear: both;
 }
 lead {
@@ -92,8 +102,18 @@ lead {
     color: var(--mainColor);
 }
 /* Helpers */
-ul.minimal, ol.minimal {list-style: none;padding: 0}
-ul.inline li, ol.inline li {display: inline-block}
+ul.minimal, ol.minimal {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+ul.inline, ol.inline {
+    display: table;
+}
+ul.inline li, ol.inline li {
+    display: block;
+    float: left;
+}
 h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     text-align: center;
     display: block;
@@ -102,7 +122,27 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     margin: 0 auto;
 }
 .image {
-    background: none center / cover no-repeat;
+    background: none center center / cover no-repeat;
+}
+.separator {
+    width: 80%;
+    height: 1px;
+    margin: 20px auto 20px auto;
+    background: linear-gradient(90deg, transparent 0%, var(--planeColor) 50%, transparent 100%);
+}
+/* Navigation */
+ul li.prev {
+    position: relative;
+}
+ul li.prev::before {
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    display: block;
+    content: "";
+    background: url('../img/icon/arrow-right-white.svg') center / contain no-repeat;
 }
 /* Container */
 .container {
@@ -110,8 +150,8 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     width: 60%;
 }
 /* Grid */
-[class*=grid] {display: table}
-.grid-2 > * {
+[class*=grid] {display: table;width: 100%}
+.grid-2 > div, .grid-2 > section {
     width: 50%;
     float: left;
 }
@@ -132,22 +172,62 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
 }
 /* Buttons */
 .button {
-    padding: 10px;
+    min-width: 215px;
+    clear: both;
+    padding: 20px;
     border: none; /* prevents border-bottom from some links */
     display: block;
-    float: left;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+    /* float: left; */
 }
-.button:hover {
-    border: none; /* prevents border-bottom from some links */
+    .button.center {
+        margin: 30px auto 30px auto !important;
+    }
+@media (min-width: 520px) {
+    .button {
+        min-width: 315px;
+    }
+}
+@media (min-width: 1024px) {
+    .button {
+        min-width: 25%;
+    }
 }
 .button.header {
-    width: 200px;
-    margin: 20px 0 20px 0;
+    margin-top: -10px;
     text-align: center;
+    /* margin-right: 17px; */
+    display: inline-block;
+    float: none;
+    padding: 10px 30px 10px 30px;
 }
 .button.default {
+    height: 60px;
     margin: 30px 0 30px 0;
+    border: 1px solid var(--mainColor);
+    background: transparent !important;
+    position: relative;
+    color: var(--mainColor);
+    /* z-index: 3; */
 }
+    .button.default::after {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -10px;
+        left: 10px;
+        /* margin: 15px 0 0 15px; */
+        background: var(--paleColor);
+        z-index: -1;
+        transition: var(--animation-timing) ease-out;
+    }
+    .button.default:hover::after {
+        bottom: 0;
+        left: 0;
+    }
 .button.slim {
     margin: 15px 0 15px 0;
 }

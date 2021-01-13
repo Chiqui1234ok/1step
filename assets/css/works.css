@@ -1,0 +1,40 @@
+/* Works */
+#works {
+    background: var(--subBgColor);
+}
+#works h2.en, #services h2.en {
+    margin: 0 0 20px 0;
+}
+#works h2, #services h2 {
+    margin: 0 0 45px 0;
+}
+#works p, #services p {
+    margin: 0 0 80px 0;
+}
+#works ul.carouselWrapper {
+    width: 100%;
+}
+#works ul.carouselWrapper li {
+    width: 260px;
+}
+#works ul.carouselWrapper li.wrapper {
+    width: 260px;
+    background: var(--bgColor);
+    transition: var(--animation-timing-xl) ease-out;
+}
+#works ul.carouselWrapper li.wrapper:hover {
+    margin-top: -30px;
+    box-shadow: 0 0 20px var(--shadow);
+}
+#works ul.carouselWrapper li .image {
+    width: 260px;
+    height: 240px;
+    background-image: url('https://blog.hubspot.com/hubfs/design-projects.jpg');
+}
+#works ul.carouselWrapper li p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 25%;
+    padding: 0 15px 0 15px;
+}
