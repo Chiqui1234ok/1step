@@ -48,6 +48,7 @@ However, in the mockup that title (and many others) shows the following text: "H
 # Remaining tasks for López
 
 * Animated menu icon in responsive mode (class 'menu removeDesktop')
+* Section: Works
 * Section: Flow
 * Section: Voice and Q&A
 * Section: Footer
@@ -55,7 +56,6 @@ However, in the mockup that title (and many others) shows the following text: "H
 
 # Remaining tasks for Gimenez
 
-* Section: Works
 * Sidebar for responsive mode
 * Compatibility mode (images format, usage of @supports & code interpretation check) for IE11
 * Check typos, sizes, margins and revisit entire project
