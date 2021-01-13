@@ -1,4 +1,12 @@
 /* Services */
+#services ul#basicServices p.center {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+}
+#services ul#basicServices p strong {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+}
 #services ul#basicServices {
     width: 400px;
     margin: 0 auto 80px auto;
@@ -7,7 +15,7 @@
 #services ul#basicServices li {
     width: 175px;
     height: 105px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 #services ul#basicServices li .icon {
     width: 65px;
@@ -48,10 +56,6 @@
     #services ul#basicServices li {
         margin-bottom: 0;
     }
-}
-#services ul#conclusionServices h3 {
-    color: var(--mainColor);
-    margin: 27.5px 0 15px 0;
 }
 #services ul#conclusionServices.grid-3 {
     width: 315px;

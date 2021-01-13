@@ -22,6 +22,8 @@
 #news ul.pagenav {
     width: calc(100% - 200px);
     float: left;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
 }
 #news ul.nav.simple {
     width: 200px;

@@ -50,8 +50,8 @@ header nav ul.inline {
 }
 header nav ul li {
     display: inline-block;
-    font-family: "Noto Sans JP", "Brandon Grotesque Medium", sans-serif;
-    font-weight: 400;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
     font-size: 16px;
     margin: 0 30px 0 0;
     position: relative;
