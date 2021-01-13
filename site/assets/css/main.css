@@ -40,7 +40,7 @@ html {
 body {
     margin: 0;
 	overflow-x: hidden;
-	background: #eee;
+	background: var(--bgColor);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans JP', sans-serif;
@@ -104,7 +104,7 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
     margin: 0 auto;
 }
 .image {
-    background: none center / cover no-repeat;
+    background: none center center / cover no-repeat;
 }
 /* Container */
 .container {
