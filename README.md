@@ -60,3 +60,4 @@ However, in the mockup that title (and many others) shows the following text: "H
 * Compatibility mode (images format, usage of @supports & code interpretation check) for IE11
 * Check typos, sizes, margins and revisit entire project
 * Image optimizations for mobile and desktop 
+* All buttons
