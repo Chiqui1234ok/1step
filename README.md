@@ -1,4 +1,5 @@
 # 1step
+
 This project is based in Jekyll, so, the demo project is inside **_site** folder.
 
 * site
@@ -7,6 +8,7 @@ This project is based in Jekyll, so, the demo project is inside **_site** folder
 You can try a [demo](https://chiqui1234.github.io/1step/) here.
 
 # Build
+
 You need *Ruby* and *Ruby Gems* installed and in your OS and PATH. Then, you can execute these actions in a terminal (in this project directory):
 ```bash
 gem install bundler jekyll
@@ -15,6 +17,7 @@ bundle exec jekyll serve # This will build the site and you can test a demo on l
 ```
 
 # Compatibility
+
 This template is fully-compatible with older web browsers, especifically: 
 * IE10 (late 2012)
 * Safari 10.1 (early 2017)
@@ -41,3 +44,19 @@ Above code was "bad for SEO" and we changed first H2 by a P (paragraph).
     </h2>
 ```
 However, in the mockup that title (and many others) shows the following text: "HEADING2 ENGLISH", so I suppose you preffer the old H2 but with a new **.en** class, lowering the normal H2 font-size.
+
+# Remaining tasks for López
+
+* Animated menu icon in responsive mode (class 'menu removeDesktop')
+* Section: Flow
+* Section: Voice and Q&A
+* Section: Footer
+* Section: Blog
+
+# Remaining tasks for Gimenez
+
+* Section: Works
+* Sidebar for responsive mode
+* Compatibility mode (images format, HTML and CSS interpretation check and so on) for IE11
+* Check typos, sizes and revisit entire project
+* Image optimizations for mobile and desktop 
