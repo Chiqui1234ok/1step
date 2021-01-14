@@ -11,18 +11,27 @@
 #works p, #services p {
     margin: 0 0 80px 0;
 }
+#works .carouselWrapper {
+    width: 100vw;
+    padding: 30px 0 30px 0;
+    overflow: hidden;
+}
 #works ul.carouselWrapper {
-    width: 100%;
+    overflow-x: auto;
 }
 #works ul.carouselWrapper li {
     width: 260px;
+    /* padding-top: 30px; */
 }
-#works ul.carouselWrapper li.wrapper {
-    width: 260px;
+#works ul.carouselWrapper li .wrapper {
+    width: 100%;
     background: var(--bgColor);
+    box-shadow: 0 0 5px var(--shadow);
+    transform: scale(1.05);
     transition: var(--animation-timing-xl) ease-out;
+    margin-top: 0;
 }
-#works ul.carouselWrapper li.wrapper:hover {
+#works ul.carouselWrapper li .wrapper:hover {
     margin-top: -30px;
     box-shadow: 0 0 20px var(--shadow);
 }
@@ -31,10 +40,23 @@
     height: 240px;
     background-image: url('https://blog.hubspot.com/hubfs/design-projects.jpg');
 }
-#works ul.carouselWrapper li p {
+#works ul.carouselWrapper li p.details {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     font-size: 20px;
     margin-top: 25%;
     padding: 0 15px 0 15px;
+}
+@media (min-width: 1280px) {
+    #works ul.carouselWrapper {
+        padding-top: 80px;
+    }
+    #works ul.carouselWrapper li {
+        margin: 0 15px 0 15px;
+        width: 520px;
+    }
+    #works ul.carouselWrapper li .image {
+        width: 520px;
+        height: 480px;
+    }
 }
