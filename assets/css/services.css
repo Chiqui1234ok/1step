@@ -45,14 +45,6 @@
 #services ul#basicServices li p {
     margin-top: 20px;
 }
-@media (min-width: 520px) {
-    #services ul#basicServices {
-        width: 400px;
-    }
-    #services ul#basicServices li {
-        width: 175px;
-    }
-}
 @media (min-width: 600px) {
     #services ul#basicServices {
         width: 525px;
@@ -67,15 +59,19 @@
     }
 }
 #services ul#conclusionServices.grid-3 {
-    width: 315px;
+    width: 350px;
     display: table;
     clear: both;
     margin: 0 auto;
     padding: 0;
 }
 #services ul#conclusionServices li {
-    width: 315px;
+    width: 350px;
     margin-right: 0;
+    transition: 0.5s ease-out;
+    background: var(--bgColor);
+    box-shadow: 0 0 5px var(--shadow);
+    margin-bottom: 40px;
 }
 #services ul#conclusionServices li.last {
     margin-right: 0;
@@ -83,6 +79,9 @@
 #services ul#conclusionServices li .image {
     width: 100%;
     height: 250px;
+}
+#services ul#conclusionServices li .details {
+    padding: 0 10px 0 10px;
 }
 #services ul#conclusionServices li.webDesign .image {
     background-image: url('../img/home/01topsample.webp'); /* IE11 doesn't support webp */
@@ -93,6 +92,9 @@
 #services ul#conclusionServices li.graphicProduction .image {
     background-image: url('../img/home/02_letterhead.webp'); /* IE11 doesn't support webp */
 }
+#services button.center {
+    margin: 40px auto 0 auto;
+}
 @media (min-width: 1280px) {
     #services ul#conclusionServices.grid-3 {
         width: 1050px;
@@ -102,6 +104,15 @@
     #services ul#conclusionServices li {
         width: 340px;
         margin-right: 15px;
+        height: 520px;
+        margin-bottom: 0;
+    }
+    #services ul#conclusionServices li:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px var(--shadow);
+    }
+    #services ul#conclusionServices li .details {
+        padding: 0 20px 0 20px;
     }
 }
 @media (min-width: 2560px) {
