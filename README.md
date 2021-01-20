@@ -45,19 +45,21 @@ Above code was "bad for SEO" and we changed first H2 by a P (paragraph).
 ```
 However, in the mockup that title (and many others) shows the following text: "HEADING2 ENGLISH", so I suppose you preffer the old H2 but with a new **.en** class, lowering the normal H2 font-size.
 
-# Remaining tasks for López
+# Remaining tasks for Mario
 
 * Animated menu icon in responsive mode (class 'menu removeDesktop')
 * Section: Works
-* Section: Flow
+* Section: Flow (Done)
 * Section: Voice and Q&A
 * Section: Footer
 * Section: Blog
 
-# Remaining tasks for Gimenez
+# Remaining tasks for Santiago
 
-* Sidebar for responsive mode
-* Compatibility mode (images format, usage of @supports & code interpretation check) for IE11
+* Sidebar for responsive mode (in progress : paused)
+* Section: Contact (in progress)
+* Compatibility mode for IE11 (Done : It only remains to change the CSS variables for hard-coded values)
 * Check typos, sizes, margins and revisit entire project
-* Image optimizations for mobile and desktop 
-* All buttons
+* Image optimizations for mobile and desktop
+* Home buttons (Done)
+* Alt buttons (in progress)
