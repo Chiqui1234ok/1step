@@ -146,8 +146,20 @@ ul li.prev::before {
 }
 /* Container */
 .container {
-    margin: 20px;
-    width: 60%;
+    margin: 0 auto;
+    width: 90%;
+}
+@media (min-width: 1024px) {
+    .container {
+        /* margin: 20px; */
+        width: 80%;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        /* margin: 20px; */
+        width: 60%;
+    }
 }
 /* Grid */
 [class*=grid] {display: table;width: 100%}
@@ -169,69 +181,4 @@ ul li.prev::before {
 .right {
     width: 50%;
     float: right;
-}
-/* Buttons */
-.button {
-    min-width: 215px;
-    clear: both;
-    padding: 20px;
-    border: none; /* prevents border-bottom from some links */
-    display: block;
-    font-family: noto-sans-cjk-jp, sans-serif;
-    font-weight: 500;
-    /* float: left; */
-}
-    .button.center {
-        margin: 30px auto 30px auto !important;
-    }
-@media (min-width: 520px) {
-    .button {
-        min-width: 315px;
-    }
-}
-@media (min-width: 1024px) {
-    .button {
-        min-width: 25%;
-    }
-}
-.button.header {
-    margin-top: -10px;
-    text-align: center;
-    /* margin-right: 17px; */
-    display: inline-block;
-    float: none;
-    padding: 10px 30px 10px 30px;
-}
-.button.default {
-    height: 60px;
-    margin: 30px 0 30px 0;
-    border: 1px solid var(--mainColor);
-    background: transparent !important;
-    position: relative;
-    color: var(--mainColor);
-    /* z-index: 3; */
-}
-    .button.default::after {
-        width: 100%;
-        height: 60px;
-        position: absolute;
-        display: block;
-        content: "";
-        bottom: -10px;
-        left: 10px;
-        /* margin: 15px 0 0 15px; */
-        background: var(--paleColor);
-        z-index: -1;
-        transition: var(--animation-timing) ease-out;
-    }
-    .button.default:hover::after {
-        bottom: 0;
-        left: 0;
-    }
-.button.slim {
-    margin: 15px 0 15px 0;
-}
-.button.bright {
-    background: var(--conversionColor);
-    color: var(--bgColor);
 }

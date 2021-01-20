@@ -1,7 +1,7 @@
-function supportsWebP() {
-    var elem = document.createElement('canvas');    
-    if ( (elem.getContext && elem.getContext('2d')) ) { // was able or not to get WebP representation
-        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-    }    // very old browsers like IE 8, canvas not supported
-    return false;
-}
+function supportsWebP(callback) {
+    var webP = new Image();
+    webP.onload = webP.onerror = function () {
+        callback(webP.height == 2);
+    };
+    webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+};
