@@ -37,8 +37,11 @@
     <link rel="stylesheet" href="assets/css/works.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/aboutUs.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/productionFee.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/blog.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/flow.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/contact.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/compatibility.css" type="text/css" /> <!-- Here, we are loading legacy image formats -->
+    <link rel="stylesheet" href="assets/css/button.css" type="text/css" />
     <!-- Fonts CDNs (later it'll be merged with "chunk.css" and fonts stored locally, not in CDN ) -->
     <link rel="stylesheet" href="https://use.typekit.net/psc4ucl.css" /> <!-- Brandon Grotesque -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -140,35 +143,75 @@
     </nav>
 </header>
 <div id="sidebar">
-    <div class="grid-2">
-        <div class="left">
-            <ul class="minimal inline">
-                <li>
-                    <a href="#aboutUs" title="#" onclick="toggleSidebar()">ABOUT US</a>
-                </li>
-                <li>
-                    <a href="#services" title="#" onclick="toggleSidebar()">SERVICE</a>
-                </li>
-                <li>
-                    <a href="#works" title="#" onclick="toggleSidebar()">WORKS</a>
-                </li>
-            </ul>
-            <div class="separator removeMobile"></div>
-            <ul class="minimal inline">
-                <li>
-                    <a href="#flow" title="#" onclick="toggleSidebar()">FLOW</a>
-                </li>
-                <li>
-                    <a href="#productionFee" title="#" onclick="toggleSidebar()">PRICE</a>
-                </li>
-                <li>
-                    <a href="#contact" title="#" onclick="toggleSidebar()">COMPANY</a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="image"></div>
-    </div>
+    <ul class="minimal">
+        <li>
+            <a href="#aboutUs" title="#" onclick="toggleSidebar()">
+                <strong>私たちとは</strong>
+                ABOUT US
+            </a>
+        </li>
+        <li class="subMenu">
+            <a onclick="toggleSidebar()" title="#">
+                <strong>サービス</strong>
+                SERVICE
+            </a>
+        </li>
+        <li>
+            <a href="#works" title="#">
+                <strong>制作実績</strong>
+                WORKS
+            </a>
+        </li>
+        <li>
+            <a href="#flow" title="#">
+                <strong>制作の流れ</strong>
+                FLOW
+            </a>
+        </li>
+        <li class="subMenu">
+            <a href="#company" title="#" onclick="">
+                <strong>会社概要</strong>
+                COMPANY
+            </a>
+        </li>
+        <li>
+            <a href="#voice" title="#">
+                <strong>お客様の声</strong>
+                VOICE
+            </a>
+        </li>
+        <li>
+            <a href="#blog" title="#">
+                <strong>ブログ</strong>
+                BLOG
+            </a>
+        </li>
+        <li>
+            <a href="#price">
+                <strong>料金</strong>
+                PRICE
+            </a>
+        </li>
+        <li>
+            <a href="#faq">
+                <strong>よくある質問</strong>
+                FAQ
+            </a>
+        </li>
+        <li>
+            <a href="#news">
+                <strong>お知らせ</strong>
+                NEWS
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <button class="button blue">お問い合わせ・無料見積もり</button>
+    <button class="button default icon telephone">052-414-7327</button>
+    <p>
+        ※受付時間は9:00〜18:00<br/ >
+        定休日は土日（年末年始を除く）
+    </p>
 </div>
 <main>
     <section id="intro">
@@ -391,43 +434,43 @@
     <ul id="basicServices" class="grid-5 minimal inline"> <!-- grid-5 must be compatible with IE11-->
         <li class="contactUs">
             <div class="icon"></div>
-            <h4 class="title">01. お問い合わせ</h4>
+            <h4 class="title"><span>01.</span> お問い合わせ</h4>
         </li>
         <li class="meeting">
             <div class="icon"></div>
-            <h4 class="title">02. お打ち合わせ</h4>
+            <h4 class="title"><span>02.</span> お打ち合わせ</h4>
         </li>
         <li class="planning">
             <div class="icon"></div>
-            <h4 class="title">03. 企画立案&見積</h4>
+            <h4 class="title"><span>03.</span> 企画立案&見積</h4>
         </li>
         <li class="contract">
             <div class="icon"></div>
-            <h4 class="title">04. ご契約</h4>
+            <h4 class="title"><span>04.</span> ご契約</h4>
         </li>
         <li class="topDesign">
             <div class="icon"></div>
-            <h4 class="title">05. トップデザイン</h4>
+            <h4 class="title"><span>05.</span> トップデザイン</h4>
         </li>
         <li class="lowerPageProduction">
             <div class="icon"></div>
-            <h4 class="title">06. 下層ページ制作</h4>
+            <h4 class="title"><span>06.</span> 下層ページ制作</h4>
         </li>
         <li class="siteConstruction">
             <div class="icon"></div>
-            <h4 class="title">07. サイト構築</h4>
+            <h4 class="title"><span>07.</span> サイト構築</h4>
         </li>
         <li class="testUp">
             <div class="icon"></div>
-            <h4 class="title">08. テストアップ</h4>
+            <h4 class="title"><span>08.</span> テストアップ</h4>
         </li>
         <li class="siteRelease">
             <div class="icon"></div>
-            <h4 class="title">09. サイト公開</h4>
+            <h4 class="title"><span>09.</span> サイト公開</h4>
         </li>
         <li class="use">
             <div class="icon"></div>
-            <h4 class="title">10. 運用</h4>
+            <h4 class="title"><span>10.</span> 運用</h4>
         </li>
     </ul>
     <button class="button default minimal center">ブログ一覧を見る</button>
@@ -474,10 +517,10 @@
             <div class="right">
                 <p>
                     <i class="icon telephone"></i>
-                    052-414-7327
+                    <strong>052-414-7327</strong>
                 </p>
             </div>
-            <p>※受付時間は9:00〜18:00　定休日は土日（年末年始を除く）</p>
+            <p class="legend">※受付時間は9:00〜18:00　定休日は土日（年末年始を除く）</p>
         </div>
     </div>
 </section>
@@ -601,8 +644,8 @@
 <script src="assets/js/sidebarCtrl.js"></script>
 <script src="assets/js/supportsWebP.js"></script>
 <script>
-console.log('test');
-if( !supportsWebP() ) {
-    document.getElementsByClassName('js')[0].classList.add('noWebP');
-}
+supportsWebP(function(support) {
+    if(!support)
+        document.getElementsByClassName('js')[0].classList.add('noWebP')
+});
 </script>

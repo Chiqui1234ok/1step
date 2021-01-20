@@ -19,11 +19,11 @@
     font-weight: 500;
     color: var(--planeColor);
     margin: 0 0 20px 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 #intro .left h1 {
     color: var(--mainColor);
-    font-size: 32px;
+    font-size: 28px;
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 700;
 }
@@ -31,11 +31,19 @@
     width: 100%;
     height: calc(100vh - 60px);
     float: right;
-    background-image: url('../img/home/bg.webp'), url('../img/home/bg.png');
+    background-image: url('../img/home/bg.webp');
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+}
+@media (min-width: 520px) {
+    #intro .left p {
+        font-size: 20px;
+    }
+    #intro .left h1 {
+        font-size: 32px;
+    }
 }
 @media (min-width: 1024px) {
     #intro .left {
