@@ -1,13 +1,3 @@
-/* Icons */
-.icon {
-    width: 20px;
-    height: 20px;
-    background: transparent center / contain no-repeat;
-    display: inline-block;
-}
-.icon.telephone {
-    background-image: url('../img/icon/cta-tel.svg');
-}
 /* Buttons */
 .button {
     /* min-width: 215px; */
@@ -66,6 +56,7 @@
 .button.bright {
     background: var(--conversionColor);
     color: var(--bgColor);
+    border: none;
 }
 .button.header {
     margin-top: -16px;
@@ -79,13 +70,4 @@
 .button.blue {
     background: var(--mainColor);
     color: #fff;
-}
-/* Icons for buttons */
-.button.icon.telephone::before { /* work in progress */
-    display: block;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 14px;
-    left: 30px;
 }

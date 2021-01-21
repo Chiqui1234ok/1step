@@ -42,6 +42,11 @@
     max-width: 420px;
   }
 }
+@media (min-width: 960px) {
+  #flow ul#basicServices {
+    max-width: 840px;
+  }
+}
 @media (min-width: 1280px) {
   #flow ul#basicServices {
     max-width: 1050px;
