@@ -3,13 +3,24 @@
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
-    padding: 120px 20px 30px 20px;
+    padding: 30px 20px 30px 20px;
     position: fixed;
     top: 0;
     right: calc(-100% - 40px);
     box-shadow: 0 5px 20px var(--shadow);
     transition: var(--animation-timing) ease-out;
     z-index: 99;
+}
+#sidebar .logo {
+    /* width: 285px; */
+    /* height: 58px; */
+    width: 260px;
+    height: 52px;
+    margin-top: 3px; /* perfect vertical alignment with menu icon */
+    margin-bottom: 30px;
+    background: url('../img/FirstLogo.svg') center / cover no-repeat;
+    float: left;
+    transition: var(--animation-timing) ease-out;
 }
 #sidebar .removeMobile {
     display: none;
@@ -18,7 +29,10 @@
     right: 0;
 }
 #sidebar ul {
+    width: 100%;
+    clear: both;
     margin: 0 auto;
+    padding: 0 0 0 20px;
     list-style-image: url('../img/icon/arrow-right-blue.svg');
 }
 #sidebar ul li {

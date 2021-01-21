@@ -50,6 +50,9 @@ header .menu {
     right: 0;
     padding-top: 2.5px;
 }
+header .menu a {
+    color: var(--mainColor);
+}
 header nav ul.inline {
     display: inline-block;
     float: none;

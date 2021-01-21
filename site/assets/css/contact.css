@@ -11,7 +11,7 @@
 #contact div.center {
     /* margin: calc(520px - 342px) auto 0 auto; */
     display: table;
-    margin-top: calc(20% - 185px);
+    /* margin-top: calc(20% - 185px); */
 }
 #contact .left, #contact .right {
     width: 100%

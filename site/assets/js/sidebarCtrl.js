@@ -1,9 +1,12 @@
 function toggleSidebar() {
     let sidebarOpened = document.getElementById('sidebar').classList.length > 0 ? true : false;
-    if(sidebarOpened)
+    if(sidebarOpened) {
         document.getElementById('sidebar').classList.remove('open');
-    else
+        sidebarLock = false;
+    } else {
         document.getElementById('sidebar').classList.add('open');
+        sidebarLock = true;
+    }
     if(document.getElementById('header').classList.length == 0)
         document.getElementById('header').classList.add('alt');
 }

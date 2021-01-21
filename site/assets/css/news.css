@@ -20,34 +20,96 @@
     margin: 0;
 }
 #news ul.pagenav {
-    width: calc(100% - 200px);
+    width: calc(100% - 22px);
     float: left;
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 400;
     font-size: 13px;
 }
-#news ul.nav.simple {
-    width: 200px;
-    float: right;
-    font-size: 12px;
-    font-family: brandon-grotesque, sans-serif;
+#news ul.pagenav li.divider {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0 25px 0 0;
+    /* border-right: 1px solid var(--paleColor); */
+    font-family: 'Brandon Grotesque Medium', sans-serif;
     font-weight: 500;
-    display: none;
 }
 #news ul.pagenav li {
-    padding: 0 25px 0 25px;
+    float: left;
     color: var(--mainColor);
 }
-#news ul.pagenav li.divider {
-    border-right: 1px solid var(--paleColor);
-    font-family: 'Brandon Grotesque Medium', sans-serif;
+#news ul.pagenav li.date {
+    width: 70px;
+    margin-right: 25px;
+    font-weight: 400;
 }
 #news ul.pagenav li.last {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
+    width: calc(100% - 70px - 25px);
+}
+#news ul.nav.simple {
+    width: 16px;
+    float: right;
+    position: relative;
+    display: block;
+}
+#news ul.nav.simple li {
+    margin: 0 30px 0 30px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+}
+#news ul.nav.simple li.menu {
+    margin: 0 30px 0 0;
+}
+#news ul.nav.simple .prev, #news ul.nav.simple .divider, #news ul.nav.simple .next { /* very important */
+    display: none;
 }
 @media (min-width: 1280px) {
+    #news ul.pagenav {
+        width: calc(100% - 250px);
+    }
+    #news ul.pagenav li {
+        margin: 0 50px 0 0;
+    }
+    #news ul.pagenav li.divider {
+        clear: none;
+        width: auto;
+        padding: 0 50px 0 0;
+        margin: 0 50px 0 0;
+        border-right: 1px solid var(--paleColor);
+    }
+    #news ul.pagenav li.date {
+        width: 120px;
+        margin: 0 50px 0 50px;
+        font-weight: 400;
+    }
+    #news ul.pagenav li.last {
+        width: calc(100% - 404px);
+        margin: 0;
+    }
     #news ul.nav.simple {
+        width: 250px;
+    }
+    #news ul.nav.simple li.prev {
+        margin: 0 30px 0 0;
+    }
+    #news ul.nav.simple li.prev i {
+        transform: rotate(180deg);
+    }
+    #news ul.nav.simple .divider {
+        width: 10px;
+        height: 1px;
+        border-top: 3px solid var(--mainColor);
+        position: absolute;
+        top: calc(33% + 1.5px);
+        left: 55px;
+    }
+    #news ul.nav.simple li.menu {
+        margin: 0;
+    }
+    #news ul.nav.simple .prev, #news ul.nav.simple .divider, #news ul.nav.simple .next {
         display: block;
     }
 }

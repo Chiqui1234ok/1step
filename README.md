@@ -56,10 +56,10 @@ However, in the mockup that title (and many others) shows the following text: "H
 
 # Remaining tasks for Santiago
 
-* Sidebar for responsive mode (in progress : paused)
+* Sidebar for smartphone (Done)
+* Sidebar for tablet (in progress)
 * Section: Contact (Done)
 * Compatibility mode for IE11 (Done : It only remains to change the CSS variables for hard-coded values)
-* Check typos, sizes, margins and revisit entire project
+* Check typos, sizes, margins and revisit entire project (in progress)
 * Image optimizations for mobile and desktop
 * Home buttons (Done)
-* Alt buttons (in progress)
