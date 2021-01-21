@@ -1,12 +1,13 @@
 #sidebar {
     background: var(--bgColor);
-    opacity: .975;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 120px 20px 30px 20px;
     position: fixed;
     top: 0;
-    right: calc(-100% - 20px);
-    box-shadow: 0 0 20px var(--shadow);
+    right: calc(-100% - 40px);
+    box-shadow: 0 5px 20px var(--shadow);
     transition: var(--animation-timing) ease-out;
     z-index: 99;
 }
@@ -16,73 +17,68 @@
 #sidebar.open {
     right: 0;
 }
-#sidebar .grid-2 {
-    height: 100%;
-    margin: 0;
-}
-#sidebar .grid-2 > * {
-    width: 100%;
-    clear: both;
-}
-#sidebar .grid-2 .left .separator {
-    margin: 80px auto 80px auto;
-}
-#sidebar .left, #sidebar .image {margin: 0}
-#sidebar .left {
-    width: 100%;
-    height: 381px;
-    margin-top: calc( 75vh - 15px - 190px );
-    /* margin-top: calc(50vh + 25% - 144px); */
-}
-#sidebar .left ul {
+#sidebar ul {
     margin: 0 auto;
+    list-style-image: url('../img/icon/arrow-right-blue.svg');
 }
-#sidebar .left ul li {
-    width: 150px;
-    margin: 15px 0 15px 0;
-    font-size: 24px;
+#sidebar ul li {
+    margin: 20px 0 20px 0;
+}
+#sidebar ul li a {
     font-family: brandon-grotesque, sans-serif;
     font-weight: 500;
-    clear: both;
+    font-size: 10px;
+    color: var(--mainColor);
+    display: block;
+}
+#sidebar ul li a strong {
+    /* width: 100px; */
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#sidebar ul li a span {
+    font-size: 14px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
+    width: calc(100% - 100px - 32px - 20px);
+    margin-top: 5px;
+    display: inline-block;
+}
+#sidebar ul li a .subMenuIcon {
+    width: 20px;
+    height: 20px;
+    background: var(--mainColor);
+    color: var(--bgColor);
+    font-size: 14px;
     text-align: center;
+    float: right;
+    /* display: inline-block; */
 }
-#sidebar .left ul li.last {
-    margin: 15px 0 0 0;
+#sidebar ul li ul.trigger { /* 'display: none' is set in sidebarCtrl.js by default */
+    list-style-image: url('../img/icon/arrow-hamburguer.svg');
+    width: 90%;
 }
-#sidebar .image {
+#sidebar ul li ul li {
+    transform: scale(1.15);
+    padding-left: 5px;
+}
+#sidebar button {
     width: 100%;
-    height: calc(50vh - 30px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('https://www.hdwallpapers.in/download/colorful_clouds-1440x2560.jpg');
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0;
 }
-@media (min-width: 1280px) {
-    #sidebar .grid-2 > * {
-        width: 50vw;
-        clear: none;
-    }
-    #sidebar .left {
-        height: 249px;
-        margin-top: calc(50vh - 124px);
-    }
-    #sidebar .image {
-        width: 50vw;
-        height: 100vh;
-        left: 50vw;
-    }
-    #sidebar .removeMobile {
-        display: block;
-    }
-    #sidebar .left ul li, #sidebar .left ul li.last {
-        font-size: 20px;
-        margin: 0 30px 0 30px;
-        clear: none;
-        text-align: left;
-    }
+#sidebar p.center {
+    font-weight: 500;
+    margin-bottom: 40px;
 }
-@media (min-width: 1920px) {
-    #sidebar .left ul li {
-        font-size: 26px;
-    }
+#sidebar ul.subMenu.footer a {
+    font-size: 18px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
+    padding-left: 10px;
 }

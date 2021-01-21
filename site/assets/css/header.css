@@ -33,9 +33,12 @@ header .logo {
     float: left;
     transition: var(--animation-timing) ease-out;
 }
+header .button.bright {
+    min-width: auto;
+}
 header .menu {
     background: var(--bgColor);
-    box-shadow: 0 0 20px var(--shadow);
+    box-shadow: 0 5px 10px var(--shadow);
     font-size: 28px;
     line-height: 52px;
     color: var(--mainColor);
@@ -45,6 +48,7 @@ header .menu {
     position: fixed;
     top: 30px;
     right: 0;
+    padding-top: 2.5px;
 }
 header nav ul.inline {
     display: inline-block;

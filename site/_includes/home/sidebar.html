@@ -1,71 +1,133 @@
 <div id="sidebar">
-    <ul class="minimal">
+    <ul>
         <li>
             <a href="#aboutUs" title="#" onclick="toggleSidebar()">
                 <strong>私たちとは</strong>
-                ABOUT US
+                <span>ABOUT US</span>
             </a>
         </li>
         <li class="subMenu">
-            <a onclick="toggleSidebar()" title="#">
+            <a title="#" onclick="changeSidebarSubMenuStatus('Service');">
                 <strong>サービス</strong>
-                SERVICE
+                <span>SERVICE</span>
+                <div id="iconService" class="subMenuIcon">+</div>
             </a>
+            <ul id="subMenuService" style="display: none">
+                <li>
+                    <a href="#" onclick="toggleSidebar()">SERVICE TOP</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">WEB PRODUCE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">WEB SUPPORT</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">GRAPHIC PRODUCE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">LOGO PRODUCE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">CHARACTER & ILLUSTRATION</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">PHOTOGRAPHY</a>
+                </li>
+            </ul>
         </li>
         <li>
-            <a href="#works" title="#">
+            <a onclick="changeSidebarSubMenuStatus('Works');" href="#works" title="#">
                 <strong>制作実績</strong>
-                WORKS
+                <span>WORKS</span>
             </a>
         </li>
         <li>
-            <a href="#flow" title="#">
+            <a onclick="toggleSidebar()" href="#flow" title="#">
                 <strong>制作の流れ</strong>
-                FLOW
+                <span>FLOW</span>
             </a>
         </li>
         <li class="subMenu">
-            <a href="#company" title="#" onclick="">
+            <a href="#company" title="#" onclick="changeSidebarSubMenuStatus('Company');">
                 <strong>会社概要</strong>
-                COMPANY
+                <span>COMPANY</span>
+                <div id="iconCompany" class="subMenuIcon">+</div>
             </a>
+            <ul id="subMenuCompany" style="display: none">
+                <li>
+                    <a href="#" onclick="toggleSidebar()">COMPANY TOP</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">COMPANY OUTLINE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">MESSAGE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">COMPANY PHILOSOPHY</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">HISTORY</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">STAFF</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">ACCESS</a>
+                </li>
+            </ul>
         </li>
         <li>
-            <a href="#voice" title="#">
+            <a onclick="toggleSidebar()" href="#voice" title="#">
                 <strong>お客様の声</strong>
-                VOICE
+                <span>VOICE</span>
             </a>
         </li>
         <li>
-            <a href="#blog" title="#">
+            <a onclick="toggleSidebar()" href="#blog" title="#">
                 <strong>ブログ</strong>
-                BLOG
+                <span>BLOG</span>
             </a>
         </li>
         <li>
-            <a href="#price">
+            <a onclick="toggleSidebar()" href="#price">
                 <strong>料金</strong>
-                PRICE
+                <span>PRICE</span>
             </a>
         </li>
         <li>
-            <a href="#faq">
+            <a onclick="toggleSidebar()" href="#faq">
                 <strong>よくある質問</strong>
-                FAQ
+                <span>FAQ</span>
             </a>
         </li>
         <li>
-            <a href="#news">
+            <a onclick="toggleSidebar()" href="#news">
                 <strong>お知らせ</strong>
-                NEWS
+                <span>NEWS</span>
             </a>
         </li>
     </ul>
     <hr>
     <button class="button blue">お問い合わせ・無料見積もり</button>
-    <button class="button default icon telephone">052-414-7327</button>
-    <p>
+    <button class="button default">
+        <i class="icon-phone"></i>
+        052-414-7327
+    </button>
+    <p class="center">
         ※受付時間は9:00〜18:00<br/ >
         定休日は土日（年末年始を除く）
     </p>
+    <ul class="subMenu footer">
+        <li>
+            <a href="#">サイトのご利用条件</a>
+        </li>
+        <li>
+            <a href="#">プライバシーポリシー</a>
+        </li>
+        <li>
+            <a href="#">サイトマップ</a>
+        </li>
+    </ul>
 </div>

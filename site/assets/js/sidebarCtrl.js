@@ -4,4 +4,13 @@ function toggleSidebar() {
         document.getElementById('sidebar').classList.remove('open');
     else
         document.getElementById('sidebar').classList.add('open');
+    if(document.getElementById('header').classList.length == 0)
+        document.getElementById('header').classList.add('alt');
+}
+function changeSidebarSubMenuStatus(id) {
+    // Toggles the character inside the icon's submenu
+    document.getElementById(`icon${id}`).innerText == '+' ? document.getElementById(`icon${id}`).innerText = '-' : document.getElementById(`icon${id}`).innerText = '+';
+    // Toggles the submenu in sidebar
+    document.getElementById(`subMenu${id}`).style.display == 'none' ? document.getElementById(`subMenu${id}`).style.display = 'block' : document.getElementById(`subMenu${id}`).style.display = 'none';
+    document.getElementById(`subMenu${id}`).classList[0] == 'trigger' ? document.getElementById(`subMenu${id}`).classList.remove('trigger') : document.getElementById(`subMenu${id}`).classList.add('trigger');
 }
