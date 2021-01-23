@@ -2,3 +2,99 @@
 #qa {
     background: var(--subBgColor);
 }
+#qa ul.minimal{
+    max-width: 320px; 
+    
+ 
+}
+#qa ul.minimal li{
+    
+    width: 280px;
+    display: table;
+    text-align: center;
+     margin: 60px 20px 0 20px; 
+ 
+}
+#qa ul.minimal li:first-child .image{
+background-image: url('../img/home/img.png');
+width: 100%;
+height: 170px;
+
+}
+#qa ul.minimal li:last-child .image{
+background-image: url('../img/home/img-1.png');  
+width: 100%;
+height: 170px;
+color: var(--bgColor);
+ }
+#qa ul.minimal li div.image ~ p{
+ background: var(--bgColor); 
+ width: 260px;
+ margin: 0 10px 0 10px;
+ padding: 0 20px 0 20px ;
+ color: var(--subColor);
+ position:relative;
+
+  }
+  #qa ul.minimal li div.image ~ p::before{
+  content: '';
+  width: 100%;
+  height: 30px;
+  background-color:var(--bgColor);
+  left: 0;
+  top:-29px;
+  position: absolute;
+ 
+     }
+ #qa ul.minimal li div.image ~ p::after{
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-color:var(--bgColor);
+        left: 0;
+        bottom:-29px;
+        position: absolute;
+           }
+@media (min-width: 768px) {
+            #qa ul.minimal{
+              max-width: 768px;
+              
+            }
+            #qa ul.minimal li{
+    
+                width: 340px;
+                text-align: center;
+                margin: 80px 30px 0 30px; 
+             
+            }
+            #qa ul.minimal li:first-child .image{
+                height: 204px;
+                
+            }
+            #qa ul.minimal li:last-child .image{
+                height: 204px;
+            }
+           #qa ul.minimal li div.image ~ p{
+                width: 299px;
+                margin: 0 20px 0 20px;
+                padding: 0 20px 0 20px ; 
+           
+             } 
+            #qa ul.minimal li div.image ~ p::after{
+                height: 40px;
+                bottom:-40px;
+                 
+               }
+            #qa ul.minimal li div.image ~ p::before{
+                top:-39px;
+                height: 40px;
+               
+
+                   }   
+          }
+
+@media (min-width: 1280px) {
+            #qa ul.minimal {
+              max-width: 1050px;
+            }
+          }
