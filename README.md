@@ -59,6 +59,12 @@ However, in the mockup that title (and many others) shows the following text: "H
 * Sidebar for smartphone (Done)
 * Section: Contact (Done)
 * Compatibility mode for IE11 (Done : It only remains to change the CSS variables for hard-coded values)
-* Check typos, sizes, margins and revisit entire project (in progress)
+* Check typos, sizes, margins and revisit entire project (Done)
 * Image optimizations for mobile and desktop (Done)
 * Home buttons (Done)
+* "SCROLL" text & line effect (Done)
+
+# Questions and notes for next Google Meet
+* Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
+* This project will get full IE11 compatibility when color codes are hard-coded and not stored in variables. This process will be complete at the very end of the development.
+* All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
