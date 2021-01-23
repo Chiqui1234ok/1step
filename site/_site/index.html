@@ -53,7 +53,15 @@
 <header id="header">
     <div class="logo"></div>
     <div class="menu removeDesktop">
-        <a onclick="toggleSidebar()">☰</a>
+        <!-- <a onclick="toggleSidebar()">☰</a> -->
+        <a class="row cf" onclick="toggleSidebar()">
+            <div class="three col" style="padding-top: 2px">
+                <div class="hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </a>
         <!-- Animated hamburguer menu: https://www.youtube.com/watch?v=uugicVDUzMA -->
     </div>
     <nav class="removeMobile">
@@ -291,6 +299,7 @@
             結果をもたらす！<br />
             WEB & デザイン
         </h1>
+        <div class="scroll"><span>SCROLL</span></div>
     </div>
     <div class="image"></div>
 </section>
@@ -424,9 +433,10 @@
     </button>
 </section>
     <section id="aboutUs">
-    <div class="container center grid-2">
+    <div class="container center grid-2"> 
         <div class="image"></div>
-        <div class="right">
+        <!-- 'fadeIn' is a class for trigger 'fade-in' effect, in combination with 'isVisible' class -->
+        <div class="right fadeIn">
             <h2 class="en">ABOUT US</h2>
             <h2>ファーストステップとは</h2>
             <p>
@@ -439,7 +449,8 @@
     <section id="productionFee">
     <div class="container grid-2">
         <div class="image"></div>
-        <div class="left">
+        <!-- 'fadeIn' is a class for trigger 'fade-in' effect, in combination with 'isVisible' class -->
+        <div class="left fadeIn">
             <h2 class="en">PRODUCTION FEE</h2>
             <h2>価格の魅力的な理由。</h2>
             <p>
@@ -574,7 +585,7 @@
     </ul>
 </section>
 </main>
-<section id="contact">
+<section id="contact" class="fadeIn">
     <div class="center container">
         <div class="left">
             <h2 class="en">CONTACT</h2>
@@ -590,7 +601,7 @@
             </div>
             <div class="right">
                 <p>
-                    <i class="icon telephone"></i>
+                    <i class="icon-phone"></i>
                     <strong>052-414-7327</strong>
                 </p>
             </div>
@@ -716,6 +727,7 @@
 </html>
 <script src="assets/js/headerCtrl.js"></script>
 <script src="assets/js/sidebarCtrl.js"></script>
+<script src="assets/js/fadeInCtrl.js"></script>
 <script src="assets/js/supportsWebP.js"></script>
 <script>
     let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar

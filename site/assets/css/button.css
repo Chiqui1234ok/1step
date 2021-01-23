@@ -31,6 +31,7 @@
     background: transparent;
     position: relative;
     color: var(--mainColor);
+    transition: var(--animation-timing) ease-out;
     /* z-index: 3; */
 }
     main .button::after { /* this effect is only used in index.html >> <main> */
@@ -57,6 +58,9 @@
     background: var(--conversionColor);
     color: var(--bgColor);
     border: none;
+}
+.button.bright:hover {
+    background: var(--conversionColorAlt);
 }
 .button.header {
     margin-top: -16px;
