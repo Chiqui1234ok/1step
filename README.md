@@ -47,7 +47,6 @@ However, in the mockup that title (and many others) shows the following text: "H
 
 # Remaining tasks for Mario
 
-* Animated menu icon in responsive mode (class 'menu removeDesktop') (pending)
 * Section: Works (pending)
 * Section: Flow (Done)
 * Section: Voice and Q&A (in progress)
@@ -63,6 +62,7 @@ However, in the mockup that title (and many others) shows the following text: "H
 * Image optimizations for mobile and desktop (Done)
 * Home buttons (Done)
 * "SCROLL" text & line effect (Done)
+* Animated menu icon in responsive mode (class 'menu removeDesktop') (Done)
 
 # Questions and notes for next Google Meet
 * Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
