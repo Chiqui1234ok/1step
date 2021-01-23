@@ -68,3 +68,4 @@ However, in the mockup that title (and many others) shows the following text: "H
 * Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
 * This project will get full IE11 compatibility when color codes are hard-coded and not stored in variables. This process will be complete at the very end of the development.
 * All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
+* The sidebar in tablet mode is smaller than screen size, is like the sidebar's mockup was copy & pasted from smartphone mode. Do you want the sidebar from tablet like showed in the mockup or like the DEMO? (the sidebar text, buttons, etc; is bigger in the DEMO)
