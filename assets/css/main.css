@@ -16,6 +16,7 @@
     --bgColor: #ffffff;
     --subBgColor: #ebf3f4;
     --conversionColor: #a8d991;
+    --conversionColorAlt: #77BF56;
     --shadow: rgba(0, 0, 0, .25);
     /*  */
     --animation-timing: .5s;
@@ -181,4 +182,30 @@ ul li.prev::before {
 .right {
     width: 50%;
     float: right;
+}
+/* Home fade in animation */
+.fadeIn {
+    /* margin-top:40px; */
+    /* background:grey; */
+    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transform: translateY(50px) rotate(-5deg) translateZ(0);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    /* -webkit-filter: grayscale(1); */
+    /* filter: grayscale(1); */
+}
+.bottom-right.IsVisible { /* for changing the angle who animation fadein enters in scene */
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+.isVisible {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
 }

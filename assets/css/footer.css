@@ -1,0 +1,71 @@
+/*FOOTER*/
+
+footer h3{
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--subColor);
+}
+
+footer{
+    background-color: var(--bgColor);
+    max-width: 320px;
+    
+}
+footer .left{
+    width: 100%;
+    text-align: left;
+    margin: 0 20px 0 20px;
+}
+footer .left .logo{
+    margin-top: 80px;
+    background-image: url('../img/FirstLogo.png') ;
+    background-size:cover;
+    width: 200px;
+    height: 36px;
+}
+footer .left h3{
+    margin-top: 0;
+}
+footer .left ul li{
+    width: 100%;
+    color: var(--planeColor);
+}
+footer .left ul li:first-child{
+    font-weight: bold;
+}
+footer div.center ul{
+ display: none;
+}
+footer div.right ul{
+display: none;
+   }
+footer  ul.center {
+    display: flex;
+    width: 280px;
+    list-style: none;
+    text-align: center;
+} 
+footer p.center{
+    width: 100%;
+    height: 20vw;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+ 
+} 
+@media (min-width: 1280px) {
+  footer{
+      max-width: 1920px;
+      
+  }
+  footer .center{
+      width: 33%;
+      margin-left: 50px;
+      
+     
+  }
+}
+ 
+
+
