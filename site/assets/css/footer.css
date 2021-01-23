@@ -38,7 +38,7 @@ footer div.center ul{
  display: none;
 }
 footer div.right ul{
-    display: none;
+display: none;
    }
 footer  ul.center {
     display: flex;
@@ -54,6 +54,18 @@ footer p.center{
     font-size: 14px;
  
 } 
-
+@media (min-width: 1280px) {
+  footer{
+      max-width: 1920px;
+      
+  }
+  footer .center{
+      width: 33%;
+      margin-left: 50px;
+      
+     
+  }
+}
+ 
 
 
