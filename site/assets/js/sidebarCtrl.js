@@ -2,9 +2,11 @@ function toggleSidebar() {
     let sidebarOpened = document.getElementById('sidebar').classList.length > 0 ? true : false;
     if(sidebarOpened) {
         document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('hamburger').classList.remove('active');
         sidebarLock = false;
     } else {
         document.getElementById('sidebar').classList.add('open');
+        document.getElementById('hamburger').classList.add('active');
         sidebarLock = true;
     }
     if(document.getElementById('header').classList.length == 0)
