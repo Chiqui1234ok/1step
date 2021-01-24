@@ -53,7 +53,15 @@
 <header id="header">
     <div class="logo"></div>
     <div class="menu removeDesktop">
-        <a onclick="toggleSidebar()">☰</a>
+        <!-- <a onclick="toggleSidebar()">☰</a> -->
+        <a class="row cf" onclick="toggleSidebar()">
+            <div class="three col" style="padding-top: 2px">
+                <div class="hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </a>
         <!-- Animated hamburguer menu: https://www.youtube.com/watch?v=uugicVDUzMA -->
     </div>
     <nav class="removeMobile">
@@ -291,6 +299,7 @@
             結果をもたらす！<br />
             WEB & デザイン
         </h1>
+        <div class="scroll"><span>SCROLL</span></div>
     </div>
     <div class="image"></div>
 </section>
@@ -424,9 +433,10 @@
     </button>
 </section>
     <section id="aboutUs">
-    <div class="container center grid-2">
+    <div class="container center grid-2"> 
         <div class="image"></div>
-        <div class="right">
+        <!-- 'fadeIn' is a class for trigger 'fade-in' effect, in combination with 'isVisible' class -->
+        <div class="right fadeIn">
             <h2 class="en">ABOUT US</h2>
             <h2>ファーストステップとは</h2>
             <p>
@@ -439,7 +449,8 @@
     <section id="productionFee">
     <div class="container grid-2">
         <div class="image"></div>
-        <div class="left">
+        <!-- 'fadeIn' is a class for trigger 'fade-in' effect, in combination with 'isVisible' class -->
+        <div class="left fadeIn">
             <h2 class="en">PRODUCTION FEE</h2>
             <h2>価格の魅力的な理由。</h2>
             <p>
@@ -508,43 +519,43 @@
     <ul id="basicServices" class="grid-5 minimal inline"> <!-- grid-5 must be compatible with IE11-->
         <li class="contactUs">
             <div class="icon"></div>
-            <h4 class="title"><span>01.</span> お問い合わせ</h4>
+            <h4 class="title">01.<br class="removeDesktop"> お問い合わせ</h4>
         </li>
         <li class="meeting">
             <div class="icon"></div>
-            <h4 class="title"><span>02.</span> お打ち合わせ</h4>
+            <h4 class="title">02.<br class="removeDesktop"> お打ち合わせ</h4>
         </li>
         <li class="planning">
             <div class="icon"></div>
-            <h4 class="title"><span>03.</span> 企画立案&見積</h4>
+            <h4 class="title">03.<br class="removeDesktop"> 企画立案&見積</h4>
         </li>
         <li class="contract">
             <div class="icon"></div>
-            <h4 class="title"><span>04.</span> ご契約</h4>
+            <h4 class="title">04.<br class="removeDesktop"> ご契約</h4>
         </li>
         <li class="topDesign">
             <div class="icon"></div>
-            <h4 class="title"><span>05.</span> トップデザイン</h4>
+            <h4 class="title">05.<br class="removeDesktop"> トップデザイン</h4>
         </li>
         <li class="lowerPageProduction">
             <div class="icon"></div>
-            <h4 class="title"><span>06.</span> 下層ページ制作</h4>
+            <h4 class="title">06.<br class="removeDesktop"> 下層ページ制作</h4>
         </li>
         <li class="siteConstruction">
             <div class="icon"></div>
-            <h4 class="title"><span>07.</span> サイト構築</h4>
+            <h4 class="title">07.<br class="removeDesktop"> サイト構築</h4>
         </li>
         <li class="testUp">
             <div class="icon"></div>
-            <h4 class="title"><span>08.</span> テストアップ</h4>
+            <h4 class="title">08.<br class="removeDesktop"> テストアップ</h4>
         </li>
         <li class="siteRelease">
             <div class="icon"></div>
-            <h4 class="title"><span>09.</span> サイト公開</h4>
+            <h4 class="title">09.<br class="removeDesktop"> サイト公開</h4>
         </li>
         <li class="use">
             <div class="icon"></div>
-            <h4 class="title"><span>10.</span> 運用</h4>
+            <h4 class="title">10.<br class="removeDesktop"> 運用</h4>
         </li>
     </ul>
     <button class="button default minimal center">ブログ一覧を見る</button>
@@ -574,7 +585,7 @@
     </ul>
 </section>
 </main>
-<section id="contact">
+<section id="contact" class="fadeIn">
     <div class="center container">
         <div class="left">
             <h2 class="en">CONTACT</h2>
@@ -590,7 +601,7 @@
             </div>
             <div class="right">
                 <p>
-                    <i class="icon telephone"></i>
+                    <i class="icon-phone"></i>
                     <strong>052-414-7327</strong>
                 </p>
             </div>
@@ -716,6 +727,7 @@
 </html>
 <script src="assets/js/headerCtrl.js"></script>
 <script src="assets/js/sidebarCtrl.js"></script>
+<script src="assets/js/fadeInCtrl.js"></script>
 <script src="assets/js/supportsWebP.js"></script>
 <script>
     let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar
