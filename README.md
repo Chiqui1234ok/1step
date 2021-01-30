@@ -32,24 +32,10 @@ However, you can get a good experience (with minor centering problems in certain
 * Opera Mini (any version)
 * Samsung Internet 4 (early 2016)
 
-# Corrections after first meet
-
-Above code was "bad for SEO" and we changed first H2 by a P (paragraph).
-```html
-<section id="services">
-    <h2>Service</h2> <!-- This line was changed to <p> (tag) during first Google Meet -->
-    <h2>
-        キレイなデザインは<br />
-        当たり前のこと
-    </h2>
-```
-However, in the mockup that title (and many others) shows the following text: "HEADING2 ENGLISH", so I suppose you preffer the old H2 but with a new **.en** class, lowering the normal H2 font-size.
-
 # Remaining tasks for Mario
 
 * Section: Works (pending)
 * Section: Flow (Done)
-* Section: Voice and Q&A (in progress)
 * Section: Footer (pending)
 * Section: Blog (pending)
 
@@ -61,11 +47,17 @@ However, in the mockup that title (and many others) shows the following text: "H
 * Check typos, sizes, margins and revisit entire project (Done)
 * Image optimizations for mobile and desktop (Done)
 * Home buttons (Done)
+* Section: Voice and Q&A (Done)
 * "SCROLL" text & line effect (Done)
 * Animated menu icon in responsive mode (class 'menu removeDesktop') (Done)
+* Navbar display:none bug (Resolved)
 
-# Questions and notes for next Google Meet
+# Questions and notes for next Google Meet (23/01/2021)
 * Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
 * This project will get full IE11 compatibility when color codes are hard-coded and not stored in variables. This process will be complete at the very end of the development.
 * All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
 * The sidebar in tablet mode is smaller than screen size, is like the sidebar's mockup was copy & pasted from smartphone mode. Do you want the sidebar from tablet like showed in the mockup or like the DEMO? (the sidebar text, buttons, etc; is bigger in the DEMO)
+
+# Ruben's notes (30/01/2021)
+
+Write here!
