@@ -5,12 +5,12 @@ span[1].onclick=()=>{
     a++;
     for(var i of div)
     {
-        if(a==0){i.style.left='0px';}
-        if(a==1){i.style.left='-740px';}
-        if(a==2){i.style.left='-1480px';}
-        if(a==3){i.style.left='-2220x';}
-        if(a==4){i.style.left='-2960x';}
-        if(a>4){a=4}
+        if(a==0){i.style.transform='translateX(0px)';}
+        if(a==1){i.style.transform='translateX(-300px)';}
+        if(a==2){i.style.transform='translateX(-600px)'}
+        if(a==3){i.style.transform='translateX(-900px)';}
+        if(a==4){i.style.transform='translateX(-1200px)';}
+        if(a>4){i.style.transform='translateX(0px)';}
     }
     
 }
@@ -18,11 +18,12 @@ span[0].onclick=()=>{
     a--;
     for(var i of div)
     {
-        if(a==0){i.style.left='0px';}
-        if(a==1){i.style.left='-740px';}
-        if(a==2){i.style.left='-1480px';}
-        if(a==3){i.style.left='-2220x';}
-        if(a<0){a+0}
+        if(a==0){i.style.transform='translateX(0px)';}
+        if(a==1){i.style.transform='translateX(-300px)';}
+        if(a==2){i.style.transform='translateX(-600px)'}
+        if(a==3){i.style.transform='translateX(-900px)';}
+        if(a==4){i.style.transform='translateX(-1200px)';}
+        if(a<0){a+1}
        
     }
     
