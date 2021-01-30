@@ -34,10 +34,10 @@ However, you can get a good experience (with minor centering problems in certain
 
 # Remaining tasks for Mario
 
-* Section: Works (pending)
+* Section: Works (Done, but needs horizontal swipe gesture support)
 * Section: Flow (Done)
-* Section: Footer (pending)
-* Section: Blog (pending)
+* Section: Footer (Pending)
+* Section: Blog (Pending)
 
 # Remaining tasks for Santiago
 
@@ -51,6 +51,7 @@ However, you can get a good experience (with minor centering problems in certain
 * "SCROLL" text & line effect (Done)
 * Animated menu icon in responsive mode (class 'menu removeDesktop') (Done)
 * Navbar display:none bug (Resolved)
+* Menu icon with is bad positioned (Pending)
 
 # Questions and notes for next Google Meet (23/01/2021)
 * Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
