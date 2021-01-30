@@ -1,7 +1,18 @@
 /* Q&A */
+#qa ul.minimal li div.image p {
+    color: var(--bgColor);
+    padding-top: 50px;
+    
+  
+}
+#qa ul.minimal li div.image h2 {
+    color: var(--bgColor);
+   
+   }
 #qa {
     background: var(--subBgColor);
 }
+<<<<<<< HEAD
 #qa ul.minimal {
     max-width: 280px;
     display: table;
@@ -135,3 +146,162 @@
         top: -30px;
     }
 }
+=======
+#qa ul.minimal{
+ max-width: 360px;
+    
+ 
+}
+#qa ul.minimal li{
+    
+    width: 77%;
+    height: 310px;
+    display: table;
+    text-align: center;
+     margin: 60px 11.11% 0 11.11%; 
+ 
+}
+#qa ul.minimal li:first-child .image{
+background-image: url('../img/home/img.png');
+width: 100%;
+height: 54.6%;
+
+
+}
+#qa ul.minimal li:last-child .image{
+background-image: url('../img/home/img-1.png');  
+width: 100%;
+height: 54.6%;
+color: var(--bgColor);
+ }
+/*
+corregir
+#qa ul.minimal li div.image::before{
+    content: '';
+    width:280px;
+    height: 170px;
+    background-color:var(--mainColor);
+    left: 20px;
+    opacity: 0.5;
+    position: absolute;
+  
+    
+   
+ }*/
+#qa ul.minimal li div.image ~ p{
+ background: var(--bgColor); 
+ width: 90%;
+ margin: 0 10px 0 10px;
+ padding: 0 20px 0 20px ;
+ color: var(--subColor);
+ position:relative;
+
+ 
+ 
+
+  }
+  #qa ul.minimal li div.image ~ p::before{
+  content: '';
+  width: 100%;
+  height: 30px;
+  background-color:var(--bgColor);
+  left: 0;
+  top:-29px;
+  position: absolute;
+ 
+     }
+ #qa ul.minimal li div.image ~ p::after{
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-color:var(--bgColor);
+        left: 0;
+        bottom:-29px;
+        position: absolute;
+}
+#qa ul.minimal li a{
+    background-image: url('../img/icon/iconochiq.jpeg');
+    width: 13px;
+    height: 13px;
+}
+
+@media (min-width: 411px){
+    #qa ul.minimal{
+        max-width: 411px;
+           
+        
+       }
+
+
+}
+@media (min-width: 768px) {
+            #qa ul.minimal{
+              max-width: 708px;
+              display: flex;
+              
+            }
+            #qa ul.minimal li{
+    
+                width: 339px;
+                margin: 80px 30px 0px 0px; 
+             
+            }
+            #qa ul.minimal li:first-child{
+    
+                margin-left: 30px;
+            }
+            #qa ul.minimal li:first-child .image{
+                height: 204px;
+                
+            }
+            #qa ul.minimal li:last-child .image{
+                height: 204px;
+            }
+           #qa ul.minimal li div.image ~ p{
+                width: 299px;
+                margin: 0 20px 0 20px;
+                padding: 0 20px 0 20px ; 
+           
+             } 
+            #qa ul.minimal li div.image ~ p::after{
+                height: 40px;
+                bottom:-40px;
+                 
+               }
+            #qa ul.minimal li div.image ~ p::before{
+                top:-39px;
+                height: 40px;
+               
+
+                   }   
+          }
+
+          
+
+@media (min-width: 1280px) {
+            
+    #qa ul.minimal{
+        max-width: 1050x;
+        
+        
+      }       
+    #qa ul.minimal li{
+        width: 500px;
+                
+        margin: 80px 50px 0px 0px; 
+              
+    }
+    #qa ul.minimal li:first-child{
+    
+         margin-left: 115px;
+    }
+    #qa ul.minimal li div.image ~ p{
+     
+        width: 90%;
+        
+        }
+           
+
+}
+  
+>>>>>>> bd27bf9990872ddd4b139d130df8556172cb4bbf
