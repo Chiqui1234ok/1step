@@ -62,8 +62,11 @@
 .button.bright:hover {
     background: var(--conversionColorAlt);
 }
+header.alt .button.header { /* while the header has a background, this button needs a little re-position because with -20px isn't vertical aligned */
+    margin-top: -12px;
+}
 .button.header {
-    margin-top: -16px;
+    margin-top: -20px;
     text-align: center;
     border: none;
     /* margin-right: 17px; */
