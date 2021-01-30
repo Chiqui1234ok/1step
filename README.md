@@ -49,7 +49,6 @@ However, in the mockup that title (and many others) shows the following text: "H
 
 * Section: Works (pending)
 * Section: Flow (Done)
-* Section: Voice and Q&A (in progress)
 * Section: Footer (pending)
 * Section: Blog (pending)
 
@@ -61,8 +60,10 @@ However, in the mockup that title (and many others) shows the following text: "H
 * Check typos, sizes, margins and revisit entire project (Done)
 * Image optimizations for mobile and desktop (Done)
 * Home buttons (Done)
+* Section: Voice and Q&A (Done)
 * "SCROLL" text & line effect (Done)
 * Animated menu icon in responsive mode (class 'menu removeDesktop') (Done)
+* Navbar display:none bug (Resolved)
 
 # Questions and notes for next Google Meet
 * Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
