@@ -36,7 +36,7 @@ However, you can get a good experience (with minor centering problems in certain
 
 * Section: Works (Done, but needs horizontal swipe gesture support)
 * Section: Flow (Done)
-* Section: Footer (Pending)
+* Section: Footer (Done, but needs 20px hover effect)
 * Section: Blog (Pending)
 
 # Remaining tasks for Santiago
