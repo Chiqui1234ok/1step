@@ -10,7 +10,7 @@ span[1].onclick=()=>{
         if(a==2){i.style.transform='translateX(-600px)'}
         if(a==3){i.style.transform='translateX(-900px)';}
         if(a==4){i.style.transform='translateX(-1200px)';}
-        if(a>4){i.style.transform='translateX(0px)';}
+        if(a>4){i.style.transform='translateX(0px)';a=0}
     }
     
 }
