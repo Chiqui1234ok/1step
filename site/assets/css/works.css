@@ -28,8 +28,9 @@
     width: 30px;
     height: 30px;
     top: 25%;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 42px;
+    line-height: 0;
+    /* font-weight: bold; */
     cursor: pointer;
     left: 1%;
     z-index: 1;
@@ -41,10 +42,11 @@
 #works div.carouselWrapper .wrapper{
     width: 98%;
     height: 300px;
+    padding-top: 30px;
     background: var(--paleColor);
     display: flex;
     justify-content: left;
-    overflow-x: auto;
+    overflow: hidden;
 }
 #works div.carouselWrapper .wrapper::-webkit-scrollbar{
     visibility: hidden;
@@ -57,13 +59,10 @@
     left: 0;
     text-align: center;
     background:white;
-    transition: 2s;
+    transition: margin var(--animation-timing) ease-in-out;
 }  
 #works div.carouselWrapper .wrapper div.ccard:hover{
-    top: -30px;
-    transition: 2s;
-
-    
+    margin: -30px 30px 0 30px;
 } 
 #works div.carouselWrapper .wrapper div.ccard .image{
    width: 100%;

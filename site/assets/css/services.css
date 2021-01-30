@@ -71,8 +71,6 @@
 #services ul#conclusionServices li {
     width: 350px;
     margin-right: 0;
-    transition: 0.5s ease-out;
-    ms-transition: 0.5s ease-out;
     background: var(--bgColor);
     /* box-shadow: 0 0 5px var(--shadow); */
     margin-bottom: 40px;
