@@ -83,11 +83,11 @@
 #services ul#conclusionServices li .image {
     width: 100%;
     height: 250px;
-    transition: background-size var(--animation-timing) ease-in;
-    -moz-transition: background-size var(--animation-timing) ease-in;
-    -ms-transition: background-size var(--animation-timing) ease-in;
-    -o-transition: background-size var(--animation-timing) ease-in;
-    -webkit-transition: background-size var(--animation-timing) ease-in;
+    transition: background-size var(--animation-timing-s) ease-in;
+    -moz-transition: background-size var(--animation-timing-s) ease-in;
+    -ms-transition: background-size var(--animation-timing-s) ease-in;
+    -o-transition: background-size var(--animation-timing-s) ease-in;
+    -webkit-transition: background-size var(--animation-timing-s) ease-in;
     background-size: 100%;
 }
 #services ul#conclusionServices li .image:hover {
