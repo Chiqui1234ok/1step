@@ -1,0 +1,73 @@
+/* Works */
+#works{
+    background: var(--paleColor);
+   
+}
+#works h2.en{
+    margin-top:60px;
+    margin-bottom: 12px;
+}
+#works h2.en+h2{
+    margin-bottom: 25px;
+}
+#works h2.en+h2+h2{
+    margin-bottom: 60px;
+}
+#works div.carouselWrapper{
+    width: 100%;
+    height:400px;
+    overflow: hidden;
+    position: relative;
+    margin: 60px 0 30px 0;
+}
+#works div.carouselWrapper span{
+    position: absolute;
+    top: 25%;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    left: 1%;
+    z-index: 1;
+}
+#works div.carouselWrapper span:nth-of-type(2){
+    left: 93%;
+    text-align: right;
+}
+#works div.carouselWrapper .wrapper{
+    width: 98%;
+    height: 300px;
+    background: var(--paleColor);
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+}
+#works div.carouselWrapper .wrapper::-webkit-scrollbar{
+    visibility: hidden;
+}
+#works div.carouselWrapper .wrapper div.ccard{
+    min-width: 260px;
+    height: 276px;
+    margin:0 30px 0 30px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    background:white;
+    transition: 2s;
+}  
+#works div.carouselWrapper .wrapper div.ccard:hover{
+    top: -30px;
+    transition: 2s;
+
+    
+} 
+#works div.carouselWrapper .wrapper div.ccard .image{
+   width: 100%;
+   height: 190px;
+   background-image: url('https://blog.hubspot.com/hubfs/design-projects.jpg');
+}  
+#works div.carouselWrapper .wrapper div.ccard h2{
+    width: 100%;
+    height: 86px;
+    padding: 25px;
+    
+ }  
