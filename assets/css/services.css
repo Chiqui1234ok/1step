@@ -83,6 +83,15 @@
 #services ul#conclusionServices li .image {
     width: 100%;
     height: 250px;
+    transition: background-size var(--animation-timing) ease-in;
+    -moz-transition: background-size var(--animation-timing) ease-in;
+    -ms-transition: background-size var(--animation-timing) ease-in;
+    -o-transition: background-size var(--animation-timing) ease-in;
+    -webkit-transition: background-size var(--animation-timing) ease-in;
+    background-size: 100%;
+}
+#services ul#conclusionServices li .image:hover {
+    background-size: 110%;
 }
 #services ul#conclusionServices li .details {
     padding: 0 10px 0 10px;
@@ -110,11 +119,6 @@
         margin-right: 15px;
         height: 520px;
         margin-bottom: 0;
-    }
-    #services ul#conclusionServices li:hover {
-        transform: scale(1.1);
-        ms-transform: scale(1.1);
-        /* box-shadow: 0 0 10px var(--shadow); */
     }
     #services ul#conclusionServices li .details {
         padding: 0 20px 0 20px;
