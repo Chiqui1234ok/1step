@@ -20,6 +20,7 @@
     overflow: hidden;
     position: relative;
     margin: 60px 0 30px 0;
+    transition: 2s;
 }
 #works div.carouselWrapper span{
     position: absolute;
@@ -61,9 +62,11 @@
     text-align: center;
     background:white;
     transition: margin var(--animation-timing) ease-in-out;
+    transition: 2s;
 }  
 #works div.carouselWrapper .wrapper div.ccard:hover{
     margin: -30px 30px 0 30px;
+    transition: 2s;
 } 
 #works div.carouselWrapper .wrapper div.ccard .image{
    width: 100%;
