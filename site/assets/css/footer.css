@@ -1,24 +1,74 @@
 /*FOOTER*/
 
+footer{
+    background-color: var(--bgColor);
+    max-width: 320px;
+    padding: 0 20px 0 20px;
+    
+}
+footer ul.center{
+    padding-top: 30px;
+   
+}
+footer ul.center li.facebook{
+    background-image: url('../img/icon/iconmonstr-facebook-1.svg');
+    
+   width: 18px;
+   height: 30px;
+   background-repeat: no-repeat;
+   margin-left: 80px;
+   
+}
+footer ul.center li.instagram{
+    background-image: url('../img/icon/iconmonstr-instagram-11.svg');
+    
+   width: 30px;
+   height: 30px;
+   background-repeat: no-repeat;
+   
+}
+footer ul.center li.youtube{
+    background-image: url('../img/icon/iconmonstr-youtube-8.svg');
+    
+   width: 30px;
+   height: 30px;
+   background-repeat: no-repeat;
+   
+}
+footer ul.center li.pinterest{
+    background-image: url('../img/icon/pinterest-.svg');
+    
+   width: 30px;
+   height: 30px;
+   background-repeat: no-repeat;
+   
+}
 footer h3{
     font-family: brandon-grotesque, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: var(--subColor);
 }
-
-footer{
-    background-color: var(--bgColor);
-    max-width: 320px;
-    
+footer div.center ul li h2{
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
 }
+footer div.center ul li p{
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 13px;
+    font-weight: medium;
+}
+
 footer .left{
     width: 100%;
     text-align: left;
-    margin: 0 20px 0 20px;
-}
-footer .left .logo{
+    margin: 0 7.20% 0 7.20%;
     margin-top: 80px;
+    
+}
+
+footer .left .logo{
     background-image: url('../img/FirstLogo.png') ;
     background-size:cover;
     width: 200px;
@@ -33,39 +83,169 @@ footer .left ul li{
 }
 footer .left ul li:first-child{
     font-weight: bold;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 16px;
 }
-footer div.center ul{
+footer .left ul li:nth-child(3){
+    font-weight: bold;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 13px;
+}
+footer div.center{
  display: none;
 }
-footer div.right ul{
+footer div.right{
 display: none;
    }
 footer  ul.center {
     display: flex;
+    justify-content: center;
     width: 280px;
     list-style: none;
     text-align: center;
+    
 } 
 footer p.center{
     width: 100%;
-    height: 20vw;
     font-family: brandon-grotesque, sans-serif;
     font-weight: bold;
     font-size: 14px;
+   
  
 } 
-@media (min-width: 1280px) {
+
+@media (min-width:600px){
+footer{
+    max-width: 768px;
+    padding: 0;
+}
+/*Left section*/
+footer div.left{
+    width: 100%;
+     margin: 100px 0 80px 0;
+     padding-left: 30px;
+     
+     }
+footer .left .logo{
+    width: 224px;
+    height: 40px;
+}    
+footer .left .encabezado{
+  width: 50%;
+    
+    float: left;
+  
+    }
+ 
+
+footer .left ul{
+    width: 50%;
+
+  
+  float:right;
+    
+}
+  /*Center section*/
+  footer div.center{
+    width: 50%;
+    display: block;
+    float:left;
+    padding-left: 30px;
+    margin: 0px 0 80px 0;
+    
+   
+ } 
+ footer div.center ul{
+     width: 100%;
+ }
+ footer div.center ul li {
+    width:43%;
+    margin: 0;
+    }
+    /*Right section*/
+ footer div.right{
+    display: block;
+    width: 50%;
+    float:left;
+    padding-left:30px;
+    margin: 0px 0 80px 0;
+    
+}   
+footer .right ul li{
+    margin-bottom: 30px;
+    width:40%;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 13px;
+    font-weight: medium;
+
+}    
+  /*END OF FOOTER AND SM*/
+  footer ul.center{
+    clear: both;
+    margin-bottom: 40px;
+}
+footer p.center{
+    margin-bottom: 40px;
+}
+
+}
+@media (min-width: 1280px){
   footer{
       max-width: 1920px;
+      padding: 0;
       
   }
-  footer .center{
-      width: 33%;
-      margin-left: 50px;
-      
-     
-  }
+  /*Left section*/
+  footer div.left{
+   width: 33%;
+    float:left;
+    padding-left: 50px;
+    
+    
 }
+footer .left .encabezado{
+  width: 100% ;
+    
+      }
+footer .left ul{
+   width: 100%;
+}    
+
+
+
+  /*Center section*/
+  footer div.center{
+    width: 33%;
+    padding-left: 50px;
+    margin: 100px 0 80px 0;
+    
+   
+ }
+
+
+ footer .center ul li h2{
+     margin-bottom: 15px;
+
+ }
+ footer .center ul li p{
+    margin-bottom: 40px;
+
+}
+   /*Right section*/
+ footer div.right{
+    display: block;
+    width: 33%;
+    float:left;
+    padding-left: 50px;
+    margin: 100px 0 80px 0;
+    
+}
+
+
+
+ 
+}
+
  
 
 
