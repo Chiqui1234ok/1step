@@ -73,7 +73,7 @@
     top: 130px;
     left: 10px;
     width: calc(100% - 20px); /* we need to cut 10px from left and 10px from right, so -> 20px */
-    padding: 15px 20px 0 20px; /* separation between text & icon will be set on the icon itself */
+    padding: 15px 20px 15px 20px; /* separation between text & icon will be set on the icon itself */
     background: var(--bgColor);
 }
 #qa ul.minimal li p.text { /* floating text on front of the image */
@@ -130,6 +130,9 @@
     #qa ul.minimal li .image {
         height: 190px;
         padding: 20px 20px 0 20px;
+    }
+    #qa ul.minimal li .wrapper {
+        top: 145px;
     }
     #qa ul.minimal li p.text::before {
         top: -30px;
