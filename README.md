@@ -59,6 +59,17 @@ However, you can get a good experience (with minor centering problems in certain
 * All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
 * The sidebar in tablet mode is smaller than screen size, is like the sidebar's mockup was copy & pasted from smartphone mode. Do you want the sidebar from tablet like showed in the mockup or like the DEMO? (the sidebar text, buttons, etc; is bigger in the DEMO)
 
-# Ruben's notes (30/01/2021)
+# Ruben's notes and corrections (30/01/2021)
 
-Write here!
+* Swipe effect en botones (Mario)
+* Más separación entre SCROLL y H1 (Santiago)
+* Icono de noticias lleva a pág de noticias (Santiago)
+* el carousel debe ser un bucle (Mario)
+* animaciones fadeIn con retraso (Santiago)
+* FLOW: una linea de texto, no dos (en PC) (Mario)
+* foto de CONTACT con mismo filtro azul que VOICE y Q&A (Santiago)
+* chequear letter-spacing en IE11 (Santiago)
+* agregar links a SUPER MENU (Santiago)
+* lineas del icono de menu mas estilizadas (Santiago)
+* más margen entre el ultimo link y el contorno de la sidebar, porque la barra del navegador molesta (Santiago)
+* FLOW tiene que tener dos columnas en mobile, no una (Mario)
