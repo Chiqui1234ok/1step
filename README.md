@@ -32,40 +32,24 @@ However, you can get a good experience (with minor centering problems in certain
 * Opera Mini (any version)
 * Samsung Internet 4 (early 2016)
 
-# Remaining tasks for Mario
+### Note SSL certificates can prevent older browsers (IE9 and older) when entering to your website
+It's recommended a **http** version if you really need older browser support in Windows Vista, XP, etc.
 
-* Section: Works (Done, but needs horizontal swipe gesture support)
-* Section: Flow (Done)
-* Section: Footer (Done, but needs 20px hover effect)
-* Section: Blog (Pending)
-
-# Remaining tasks for Santiago
-
-* Sidebar for smartphone (Done)
-* Section: Contact (Done)
-* Compatibility mode for IE11 (Done : It only remains to change the CSS variables for hard-coded values)
-* Check typos, sizes, margins and revisit entire project (Done)
-* Image optimizations for mobile and desktop (Done)
-* Home buttons (Done)
-* Section: Voice and Q&A (Done)
-* "SCROLL" text & line effect (Done)
-* Animated menu icon in responsive mode (class 'menu removeDesktop') (Done)
-* Navbar display:none bug (Resolved)
-* Menu icon with is bad positioned (Pending)
-
-# Questions and notes for next Google Meet (23/01/2021)
-* Note the button swipe effect (https://codepen.io/kjbrum/pen/wBBLXx) uses JQuery library. Rubén needs native CSS & JS, so we will convert that code to Vanilla (Native) Javascript for straping out JQuery dependency.
-* This project will get full IE11 compatibility when color codes are hard-coded and not stored in variables. This process will be complete at the very end of the development.
+# Dev notes
+### Basically saying some elements will be finished at end of development, for optimization reasons.
+* This project will get full IE11 compatibility later, because we store transitions and colors into variables which IE doesn't understand. We will hard-code all variables into plain text (old CSS3 revision) at the very end of the development.
 * All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
-* The sidebar in tablet mode is smaller than screen size, is like the sidebar's mockup was copy & pasted from smartphone mode. Do you want the sidebar from tablet like showed in the mockup or like the DEMO? (the sidebar text, buttons, etc; is bigger in the DEMO)
+* All icons will be appearing when we finishes the development, because we like compress all icons into small package for data-saving. This icon selection and compression isn't a fast method, so isn't convenient doing this all the time.
 
 # Ruben's notes and corrections (30/01/2021)
 
 * Swipe effect en botones (Mario)
-* Más separación entre SCROLL y H1 (Santiago)
-* Icono de noticias lleva a pág de noticias (Santiago)
-* el carousel debe ser un bucle (Mario)
-* animaciones fadeIn con retraso (Santiago)
+* Más separación entre SCROLL y H1 (Santiago) (Done)
+* SCROLL tiene una tipografía errónea en IE11 (Santiago)
+* Transiciones no funcionan en IE11 (Santiago)
+* Icono de noticias lleva a pág de noticias (Santiago) 
+* El carousel debe ser un bucle infinito (Mario)
+* animaciones fadeIn con retraso (Santiago) (Done)
 * FLOW: una linea de texto, no dos (en PC) (Mario)
 * Dejar los márgenes en **blog** y **works** igual que en el mockup (Mario)
 * Las flechas de **works** deben estar correctamente posicionadas (Mario)
