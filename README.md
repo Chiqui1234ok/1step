@@ -50,7 +50,7 @@ It's recommended a **http** version if you really need older browser support in 
 * Icono de noticias lleva a pág de noticias (Santiago) (Done)
 * El carousel debe ser un bucle infinito (Mario)
 * Animaciones fadeIn con retraso (Santiago) (Done)
-* FLOW: una linea de texto, no dos (en PC) (Mario)
+* FLOW: una linea de texto, no dos (en PC) (Santiago) (Done)
 * Dejar los márgenes en **blog** y **works** igual que en el mockup (Mario)
 * Las flechas de **works** deben estar correctamente posicionadas (Mario)
 * Foto de CONTACT con mismo filtro azul que VOICE y Q&A (Santiago) (Done)
