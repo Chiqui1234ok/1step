@@ -214,3 +214,10 @@ ul li.prev::before {
     -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
     transform: translateY(0px) rotate(0deg) translateZ(0);
 }
+/*  */
+.removeDesktop {
+    display: block;
+}
+@media (min-width: 1280px) {
+    .removeDesktop {display: none}
+}
