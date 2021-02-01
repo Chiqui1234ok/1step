@@ -67,6 +67,8 @@ However, you can get a good experience (with minor centering problems in certain
 * el carousel debe ser un bucle (Mario)
 * animaciones fadeIn con retraso (Santiago)
 * FLOW: una linea de texto, no dos (en PC) (Mario)
+* Dejar los márgenes en **blog** y **works** igual que en el mockup (Mario)
+* Las flechas de **works** deben estar correctamente posicionadas (Mario)
 * foto de CONTACT con mismo filtro azul que VOICE y Q&A (Santiago)
 * chequear letter-spacing en IE11 (Santiago)
 * agregar links a SUPER MENU (Santiago)
