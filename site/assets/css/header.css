@@ -5,9 +5,12 @@ header .removeDesktop {
     display: block;
 }
 /* Hamburguer animation */
+.hamburguer {
+    padding-top: 3px; /* nice vertical centering into white background */
+}
 .hamburger .line{
     width: 50px;
-    height: 5px;
+    height: 3px;
     background-color: var(--mainColor);
     display: block;
     margin: 8px auto;
@@ -27,10 +30,10 @@ header .removeDesktop {
   }
   
   #hamburger.active .line:nth-child(1){
-    -webkit-transform: translateY(13px) rotate(45deg);
-    -ms-transform: translateY(13px) rotate(45deg);
-    -o-transform: translateY(13px) rotate(45deg);
-    transform: translateY(13px) rotate(45deg);
+    -webkit-transform: translateY(10px) rotate(45deg);
+    -ms-transform: translateY(10px) rotate(45deg);
+    -o-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
   
   #hamburger.active .line:nth-child(3){

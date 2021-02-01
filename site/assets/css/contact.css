@@ -1,9 +1,11 @@
 /* Contact */
+/* Contact blue filter is on qa.css */
 #contact {
     width: 100%;
     height: 520px;
     padding: 60px 0 60px 0;
     background: url('../img/home/contact.webp') center / cover no-repeat;
+    position: relative;
 }
 #contact * {
     color: var(--bgColor);
@@ -12,6 +14,8 @@
     /* margin: calc(520px - 342px) auto 0 auto; */
     display: table;
     /* margin-top: calc(20% - 185px); */
+    position: relative;
+    z-index: 90;
 }
 #contact .left, #contact .right {
     width: 100%

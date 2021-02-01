@@ -25,7 +25,7 @@
 #qa ul.minimal li .image {
     position: relative;
 }
-#qa ul.minimal li .image::after {
+#qa ul.minimal li .image::after, #contact::after {
     position: absolute;
     width: 100%;
     height: 100%;
