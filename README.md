@@ -35,28 +35,36 @@ However, you can get a good experience (with minor centering problems in certain
 ### Note SSL certificates can prevent older browsers (IE9 and older) when entering to your website
 It's recommended a **http** version if you really need older browser support in Windows Vista, XP, etc.
 
-# Dev notes
-### Basically saying some elements will be finished at end of development, for optimization reasons.
-* This project will get full IE11 compatibility later, because we store transitions and colors into variables which IE doesn't understand. We will hard-code all variables into plain text (old CSS3 revision) at the very end of the development.
-* All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
-* All icons will be appearing when we finishes the development, because we like compress all icons into small package for data-saving. This icon selection and compression isn't a fast method, so isn't convenient doing this all the time.
-
 # Ruben's notes and corrections (30/01/2021)
 
+## Tasks for Mario
+
 * Swipe effect en botones (Mario)
+* El carousel debe ser un bucle infinito (Mario)
+* Dejar los márgenes en **blog** y **works** igual que en el mockup (Mario)
+* Las flechas de **works** deben estar correctamente posicionadas (Mario)
+* FLOW tiene que tener dos columnas en mobile, no una (Mario)
+
+## Tasks for Santiago
+
 * Más separación entre SCROLL y H1 (Santiago) (Done)
 * SCROLL tiene una tipografía errónea en IE11 (Santiago) (Done)
 * Transiciones no funcionan en IE11 (Santiago)
 * Icono de noticias lleva a pág de noticias (Santiago) (Done)
-* El carousel debe ser un bucle infinito (Mario)
-* Animaciones fadeIn con retraso (Santiago) (Done)
+* Animaciones fadeIn con mayor delay (Santiago) (Done)
 * FLOW: una linea de texto, no dos (en PC) (Santiago) (Done)
-* Dejar los márgenes en **blog** y **works** igual que en el mockup (Mario)
-* Las flechas de **works** deben estar correctamente posicionadas (Mario)
 * Foto de CONTACT con mismo filtro azul que VOICE y Q&A (Santiago) (Done)
+* La página tiene un overflow horizontal en móviles (Santiago) (Done)
 * Aumentar letter-spacing (Santiago) (Done)
 * Agregar links a SUPER MENU (Santiago)
 * Lineas del icono de menu mas estilizadas (Santiago) (Done)
 * Más márgen entre el ultimo link y el contorno de la sidebar, porque la barra del navegador molesta (Santiago)
 * Los márgenes de *ul > li* en Voice y Q&A estan mal en la vista de tablet (Santiago)
-* FLOW tiene que tener dos columnas en mobile, no una (Mario)
+
+---
+
+# Dev notes
+### Basically saying some elements will be finished at end of development, for optimization reasons.
+* This project will get full IE11 compatibility later, because we store transitions and colors into variables which IE doesn't understand. We will hard-code all variables into plain text (old CSS3 revision) at the very end of the development.
+* All CSS files will be compiled into one large and optimized file when the development are finished. Right now, we use at least 7 separated CSS files because it's human-readable :)
+* All icons will be appearing when we finishes the development, because we like compress all icons into small package for data-saving. This icon selection and compression isn't a fast method, so isn't convenient doing this all the time.
