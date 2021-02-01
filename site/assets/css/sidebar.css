@@ -96,3 +96,6 @@
     font-weight: 300;
     padding-left: 10px;
 }
+#sidebar ul.subMenu.footer .last {
+    margin-bottom: 60px;
+}
