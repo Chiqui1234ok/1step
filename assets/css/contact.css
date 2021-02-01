@@ -1,11 +1,14 @@
 /* Contact */
 /* Contact blue filter is on qa.css */
 #contact {
-    width: 100%;
+    width: calc(100% - 35px); /* because .fadeIn effect causes body overflow */
     height: 520px;
     padding: 60px 0 60px 0;
     background: url('../img/home/contact.webp') center / cover no-repeat;
     position: relative;
+}
+#contact.isVisible {
+    width: 100%;
 }
 #contact * {
     color: var(--bgColor);
