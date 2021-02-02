@@ -49,17 +49,16 @@ It's recommended a **http** version if you really need older browser support in 
 
 * Más separación entre SCROLL y H1 (Santiago) (Done)
 * SCROLL tiene una tipografía errónea en IE11 (Santiago) (Done)
-* Transiciones no funcionan en IE11 (Santiago)
 * Icono de noticias lleva a pág de noticias (Santiago) (Done)
 * Animaciones fadeIn con mayor delay (Santiago) (Done)
 * FLOW: una linea de texto, no dos (en PC) (Santiago) (Done)
 * Foto de CONTACT con mismo filtro azul que VOICE y Q&A (Santiago) (Done)
 * La página tiene un overflow horizontal en móviles (Santiago) (Done)
 * Aumentar letter-spacing (Santiago) (Done)
-* Agregar links a SUPER MENU (Santiago)
+* Agregar links a SUPER MENU (Santiago) (Done)
 * Lineas del icono de menu mas estilizadas (Santiago) (Done)
-* Más márgen entre el ultimo link y el contorno de la sidebar, porque la barra del navegador molesta (Santiago)
-* Los márgenes de *ul > li* en Voice y Q&A estan mal en la vista de tablet (Santiago)
+* Más márgen entre el ultimo link y el contorno de la sidebar, porque la barra del navegador molesta (Santiago) (Done)
+* Los márgenes de *ul > li* en Voice y Q&A estan mal en la vista de tablet (Santiago) (Done)
 
 ---
 
