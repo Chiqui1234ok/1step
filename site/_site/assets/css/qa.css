@@ -103,6 +103,9 @@
         width: calc(100% - 20px); /* we need to cut 10px from left and 10px from right, so -> 20px */
         padding: 40px 20px 0 20px; /* separation between text & icon will be set on the icon itself */
     }
+    #qa ul.minimal li p.text::before {
+        top: -30px;
+    }
     #qa ul.minimal li.voice {
         margin: 0 30px 0 0;
     }
@@ -134,7 +137,7 @@
     #qa ul.minimal li .wrapper {
         top: 145px;
     }
-    #qa ul.minimal li p.text::before {
+    /* #qa ul.minimal li p.text::before {
         top: -30px;
-    }
+    } */
 }
