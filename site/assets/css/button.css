@@ -86,7 +86,6 @@ header.alt .button.header { /* while the header has a background, this button ne
     background-color:var(--conversionColor);
     box-shadow:inset 0 0 0 0 var(--conversionColorAlt);
     transition:ease-out 0.3s;
-    font-size:2rem;
     outline:none;
     
     }
