@@ -42,7 +42,7 @@
     margin: 50px 40px 0 0;
     float: right;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     #productionFee .image {
         width: 50%;
         height: 600px;

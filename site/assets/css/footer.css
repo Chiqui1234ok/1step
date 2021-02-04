@@ -2,7 +2,7 @@
 
 footer {
     background-color: var(--bgColor);
-    width: 100%;
+    width: 99%;
     padding: 0 20px 0 20px; 
 }
 footer ul.center{
@@ -26,6 +26,16 @@ footer ul li a h2 {
 footer ul li a p {
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 500;
+}
+footer p.enterpriseName {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 60px 0 60px 0;
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
 }
 footer ul.center li.facebook{
     background-image: url('../img/icon/iconmonstr-facebook-1.svg');
@@ -117,15 +127,10 @@ footer  ul.center {
     text-align: center;
     
 } 
-footer p.center{
-    width: 100%;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-   
- 
-} 
-
+footer ul.center.icons {
+    margin: 0 auto 40px auto;
+    display: none;
+}
 footer #goUp {
     background: var(--bgColor);
     box-shadow: 0 0 10px var(--shadow);
@@ -230,63 +235,54 @@ footer p.center{
       padding: 0;
       
   }
-  /*Left section*/
+  footer p.enterpriseName {
+      font-size: 16px;
+      margin: 40px 0 40px 0;
+  }
+  footer ul.center.icons {
+      display: flex;
+  }
+}
+@media (min-width: 1600px) {
+    /*Left section*/
   footer div.left{
-   width: 33%;
-    float:left;
-    padding-left: 50px;
-    
-    
-}
-footer .left .encabezado{
-  width: 100% ;
-    
-      }
-footer .left ul{
-   width: 100%;
-}    
-
-
-
-  /*Center section*/
-  footer div.center{
     width: 33%;
-    padding-left: 50px;
-    margin: 100px 0 80px 0;
-    
-   
+     float:left;
+     padding-left: 50px;
  }
-
-
- footer .center ul li h2{
-     margin-bottom: 15px;
-
- }
- footer .center ul li p{
-    margin-bottom: 40px;
-
+ footer .left .encabezado{
+   width: 100% ;
 }
-   /*Right section*/
- footer div.right{
-    display: block;
-    width: 33%;
-    float:left;
-    padding-left: 50px;
-    margin: 100px 0 80px 0;
-    
-}
-footer ul.center{
+ footer .left ul{
     width: 100%;
-    padding-left: 0;
-}
-
-footer ul.center.icons {
-    margin: 0 auto 40px auto;
-}
-
+ }    
+   /*Center section*/
+   footer div.center{
+     width: 33%;
+     padding-left: 50px;
+     margin: 100px 0 80px 0;
+     
+    
+  }
+  footer .center ul li h2{
+      margin-bottom: 15px;
  
-}
-
+  }
+  footer .center ul li p{
+     margin-bottom: 40px;
  
-
-
+ }
+    /*Right section*/
+  footer div.right{
+     display: block;
+     width: 33%;
+     float:left;
+     padding-left: 50px;
+     margin: 100px 0 80px 0;
+     
+ }
+ footer ul.center{
+     width: 100%;
+     padding-left: 0;
+ }
+}

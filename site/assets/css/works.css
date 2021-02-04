@@ -85,8 +85,11 @@
 }  
 @media (min-width: 1024px) {
   #works div.carouselWrapper span {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+  }
+  #works div.carouselWrapper span:nth-of-type(2){
+    left: calc(100% - 60px - 20px);
   }
   #works div.carouselWrapper .wrapper div.ccard h2{
     font-size: 20px;
