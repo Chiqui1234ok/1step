@@ -1,31 +1,43 @@
 /*FOOTER*/
 
-footer{
+footer {
     background-color: var(--bgColor);
-    max-width: 320px;
-    padding: 0 20px 0 20px;
-    
+    width: 100%;
+    padding: 0 20px 0 20px; 
 }
 footer ul.center{
     padding-top: 30px;
    
 }
+footer ul.links li a {
+    transition: padding-left var(--animation-timing) ease-out;
+}
+footer ul.links li a:hover {
+    padding-left: 20px;
+}
+footer ul li a {
+    display: block; /* link full-fill parent element thanks to display: block */
+    color: var(--mainColor);
+}
+footer ul li a h2 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+}
+footer ul li a p {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+}
 footer ul.center li.facebook{
     background-image: url('../img/icon/iconmonstr-facebook-1.svg');
-    
-   width: 18px;
-   height: 30px;
-   background-repeat: no-repeat;
-  
-   
+    width: 18px;
+    height: 30px;
+    background-repeat: no-repeat;
 }
 footer ul.center li.instagram{
     background-image: url('../img/icon/iconmonstr-instagram-11.svg');
-    
    width: 30px;
    height: 30px;
    background-repeat: no-repeat;
-   
 }
 footer ul.center li.youtube{
     background-image: url('../img/icon/iconmonstr-youtube-8.svg');
@@ -114,9 +126,33 @@ footer p.center{
  
 } 
 
+footer #goUp {
+    background: var(--bgColor);
+    box-shadow: 0 0 10px var(--shadow);
+    padding: 22px 10px 10px 10px; /* for perfect horizontal centering */
+    color: var(--mainColor);
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    line-height: 0;
+    text-align: center;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    transition: var(--animation-timing-s) ease-out;
+}
+footer #goUp.isVisible {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}
+footer #goUp::before {
+    transition: .1s ease-out;
+}
 @media (min-width:600px){
 footer{
-    max-width: 768px;
     padding: 0;
 }
 /*Left section*/
@@ -191,7 +227,6 @@ footer p.center{
 }
 @media (min-width: 1280px){
   footer{
-      max-width: 1920px;
       padding: 0;
       
   }
@@ -245,7 +280,9 @@ footer ul.center{
     padding-left: 0;
 }
 
-
+footer ul.center.icons {
+    margin: 0 auto 40px auto;
+}
 
  
 }
