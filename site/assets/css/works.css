@@ -64,11 +64,11 @@
   text-align: center;
   background:white;
   transition: margin var(--animation-timing) ease-in-out;
-  transition: 2s;
+  transition: var(--animation-timing-xl);
 }  
 #works div.carouselWrapper .wrapper div.ccard:hover{
   margin: -30px 30px 0 30px;
-  transition: 2s;
+  box-shadow: 0 5px 20px var(--shadow);
 } 
 #works div.carouselWrapper .wrapper div.ccard .image{
  width: 100%;
