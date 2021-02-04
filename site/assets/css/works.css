@@ -3,10 +3,10 @@
   background: var(--paleColor);
  
 }
-#works h2.en{
+/* #works h2.en{
   margin-top:60px;
   margin-bottom: 12px;
-}
+} */
 #works h2.en+h2{
   margin-bottom: 25px;
 }
