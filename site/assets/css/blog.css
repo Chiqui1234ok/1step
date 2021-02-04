@@ -1,11 +1,11 @@
 #blog{
-  width: 320px;
+  width: 100%;
 }
 #blog .image{
   
   position: relative;
    width: 100%;
-   height: 490px;
+
    height: 540px;
    background-image: url('../img/home/blog.webp');
     background-position: -60em;
@@ -113,7 +113,8 @@
     background:var(--paleColor);
     transition: margin var(--animation-timing) ease-in-out;
     transition: 2s;
-  } 
+  }
+ 
   #blog div.carouselWrapper .wrapper div.ccard h3{
    color:var(--planeColor) ;
    margin-bottom: 10px;
