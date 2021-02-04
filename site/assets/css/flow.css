@@ -33,13 +33,30 @@
 }
 
 #flow ul#basicServices {
-  max-width: 210px;
+  max-width: 260px;
   display: table;
   margin: 0 auto 40px auto;
+}
+#flow ul#basicServices li {
+  width: 130px;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+#flow ul#basicServices li .icon{
+  width: 65px;   
+  height: 65px;  
+  padding:0 72px 0 73px;
+  background: none center / contain no-repeat;
+  margin: 0 auto;
 }
 @media (min-width: 520px) {
   #flow ul#basicServices {
     max-width: 420px;
+  }
+  #flow ul#basicServices li {
+    width: 210px;
+    
   }
 }
 @media (min-width: 960px) {
@@ -52,18 +69,7 @@
     max-width: 1050px;
   }
 }
-#flow ul#basicServices li {
-  width: 210px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-#flow ul#basicServices li .icon{
-  width: 65px;   
-  height: 65px;  
-  padding:0 72px 0 73px;
-  background: none center / contain no-repeat;
-  margin: 0 auto;
-}
+
 
 #flow ul#basicServices li.contactUs .icon{
   background-image: url('../img/home-icon/flow-1.svg');
