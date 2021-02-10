@@ -1,6 +1,10 @@
 /* Services */
+
 #services .icon {
     display: block;
+}
+#services p.center, h2.center{
+    margin: 0 20px 0 20px;
 }
 #services ul#basicServices p.center {
     font-family: noto-sans-cjk-jp, sans-serif;
@@ -12,7 +16,7 @@
 }
 
 #services ul#basicServices {
-    width: 350px;
+    width: 360px;
     margin: 80px auto 35px auto;
     display: table;
 }
