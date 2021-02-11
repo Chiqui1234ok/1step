@@ -25,42 +25,46 @@ This template is fully-compatible with older web browsers, especifically:
 
 However, you can get a good experience (with minor centering problems in certain elements) with:
 
-* IE9 (early 2011) and older
-* Chrome 56 (early 2017) and older
-* Firefox 51 (early 2017) and older
-* Safari 10 (late 2016) and older
+* IE9 (early 2011)
+* Chrome 56 (early 2017)
+* Firefox 51 (early 2017)
+* Safari 10 (late 2016)
 * Opera Mini (any version)
 * Samsung Internet 4 (early 2016)
 
-### Note SSL certificates can prevent older browsers (IE9 and older) when entering to your website
-It's recommended a **http** version if you really need older browser support in Windows Vista, XP, etc.
+### Note
 
-# Ruben's notes and corrections (30/01/2021)
+SSL certificates can prevent older browsers (like IE10) when entering to your website, because IE10 supports TLS 1.0 which is a vulnerable and deprecated version (insecure) of TLS/SSL.
+It's recommended a **http** (without TLS) version if you really need older browser support in Windows Vista, XP, etc.
 
-## Tasks for Mario
+# Adobe XD's mockups
 
-* Swipe effect en botones (Mario)
-* El carousel debe ser un bucle infinito (Mario)
-* Dejar los márgenes en **blog** y **works** igual que en el mockup (Mario)
-* Las flechas de **works** deben estar correctamente posicionadas (Mario)
-* FLOW tiene que tener dos columnas en mobile, no una (Mario)
+All mockups are uploaded in this [private folder](https://drive.google.com/drive/folders/1iH6_Gt4LDHOy9Zdb0uLik74d3h7HNtLV?usp=sharing).
 
-## Tasks for Santiago
+# New tasks 11-02-2021. Delivery scheduled on 02/20/2021
 
-* Más separación entre SCROLL y H1 (Santiago) (Done)
-* SCROLL tiene una tipografía errónea en IE11 (Santiago) (Done)
-* Icono de noticias lleva a pág de noticias (Santiago) (Done)
-* Animaciones fadeIn con mayor delay (Santiago) (Done)
-* FLOW: una linea de texto, no dos (en PC) (Santiago) (Done)
-* Foto de CONTACT con mismo filtro azul que VOICE y Q&A (Santiago) (Done)
-* La página tiene un overflow horizontal en móviles (Santiago) (Done)
-* Aumentar letter-spacing (Santiago) (Done)
-* Agregar links a SUPER MENU (Santiago) (Done)
-* Lineas del icono de menu mas estilizadas (Santiago) (Done)
-* Más márgen entre el ultimo link y el contorno de la sidebar, porque la barra del navegador molesta (Santiago) (Done)
-* Los márgenes de *ul > li* en Voice y Q&A estan mal en la vista de tablet (Santiago) (Done)
+## César
 
----
+* Works Single Page Type (SP, TB, PC)
+* Blog Single Page Type (SP, TB, PC)
+* (Contact) Thanks Wireframe (SP, TB, PC)
+* 03-00_works (SP, TB, PC)
+* 03-01_works PC – 1 (SP, TB, PC)
+
+## Mario
+
+* Works List Type (SP, TB, PC)
+* Blog List Type (SP, TB, PC)
+
+## Santiago
+
+* News Blog Type (SP, TB, PC)
+* News Blog Single Page Type (SP, TB, PC)
+* Contact Wireframe (SP, TB, PC)
+* Contact Confirm Wireframe (SP, TB, PC)
+* flow (SP, TB, PC)
+* flow - 1 (SP, TB, PC)
+* flow - 2 (SP, TB, PC)
 
 # Dev notes
 ### Basically saying some elements will be finished at end of development, for optimization reasons.
