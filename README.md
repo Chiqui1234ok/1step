@@ -47,9 +47,9 @@ All mockups are uploaded in this [private folder](https://drive.google.com/drive
 
 * Works Single Page Type (SP, TB, PC)
 * Blog Single Page Type (SP, TB, PC)
-* (Contact) Thanks Wireframe (SP, TB, PC)
 * 03-00_works (SP, TB, PC)
 * 03-01_works PC – 1 (SP, TB, PC)
+* CSS style for Checkbox, Radio & Select
 
 ## Mario
 
@@ -62,6 +62,7 @@ All mockups are uploaded in this [private folder](https://drive.google.com/drive
 * News Blog Single Page Type (SP, TB, PC)
 * Contact Wireframe (SP, TB, PC)
 * Contact Confirm Wireframe (SP, TB, PC)
+* Contact Thanks Wireframe (SP, TB, PC)
 * flow (SP, TB, PC)
 * flow - 1 (SP, TB, PC)
 * flow - 2 (SP, TB, PC)
