@@ -51,6 +51,12 @@ header {
     z-index: 100;
     transition: var(--animation-timing) ease-out;
 }
+header.formPage {
+    height: auto;
+    padding: 0;
+    margin: 0 0 100px 0;
+    position: relative;
+}
 header .noBorder:hover {
     border: none
 }

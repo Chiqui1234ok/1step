@@ -110,3 +110,140 @@
         margin: 0 0 20px 0;
     }
 }
+/*  */
+/* Contact page */
+section#form h2.principal,
+section#form p.principal {margin: 0 0 45px 0}
+section#form #stepGuide {
+    width: 70%;
+    margin: 0 auto 80px auto;
+    font-family: noto-sans-cjk-jp;
+    font-weight: 500;
+    color: var(--paleColor);
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+section#form #stepGuide li {
+    position: relative;
+    text-align: center;
+}
+section#form #stepGuide li::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: var(--paleColor);
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+}
+section#form #stepGuide li::before {
+    width: 100%;
+    height: 1px;
+    background: var(--paleColor);
+    left: 50%;
+    top: 0;
+    display: block;
+    content: "";
+    position: absolute;
+}
+section#form #stepGuide li::before:last-child {
+    display: none;
+    background: transparent;
+}
+section#form #stepGuide li.active {
+    color: var(--mainColor);
+}
+section#form #stepGuide li.active::after, section#form #stepGuide li.active::before {
+    background: var(--mainColor);
+}
+section#form h3 {
+    width: 100%;
+    clear: both;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+section#form h3 span {
+    margin-left: 15px;
+    color: var(--red);
+    font-size: 12px;
+}
+section#form ul.grid-2, section#form div.margin {
+    margin: 0 0 50px 0;
+    padding: 0;
+    list-style: none;
+}
+section#form ul.grid-2 li {
+    margin: 0 0 20px 0;
+    color: var(--planeColor)
+}
+/* Input */
+section#form input, section#form button {
+    outline: none;
+    border: none;
+}
+section#form input[type=text], section#form input[type=tel], section#form input[type=number] {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid var(--paleColor);
+    color: var(--planeColor)
+}
+/* Chrome, Safari, Edge, Opera */
+section#form input::-webkit-outer-spin-button,
+section#form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+section#form input[type=number] {
+  -moz-appearance: textfield;
+}
+section#form input[type=text]::placeholder, section#form input[type=tel]::placeholder, section#form input[type=number]::placeholder {
+    color: #aab2b3; /* this color is better, because "paleColor" isn't a color for all displays. In some of them, the placeholder literally "dissapears" with "paleColor", because doesn't have contrast with background's input */
+}
+section#form input[type=text]:hover::placeholder, section#form input[type=tel]:hover::placeholder, section#form input[type=number]:hover::placeholder {
+    /* border-color: var(--planeColor); */
+    color: var(--subColor);
+}
+section#form input[type=text]:focus, section#form input[type=tel]:focus, section#form input[type=number]:focus {
+    border-color: var(--planeColor);
+}
+section#form input[type=text]:invalid, section#form input[type=tel]:invalid, section#form input[type=number]:invalid {
+    border: 1px solid var(--paleColor);
+    border-left: 1px solid var(--red);
+}
+section#form #postalCodeWrapper .addOn, section#form #postalCode .check {
+    background: var(--paleColor);
+    width: 55px;
+    border: 1px solid var(--paleColor);
+    padding: 30px 0 30px 0;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--planeColor);
+    float: left;
+}
+section#form #postalCodeWrapper input[type=number] {
+    width: 230px;
+    float: left;
+    border-left: none;
+    margin-right: 20px;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+}
+section#form #postalCodeWrapper button.check {
+    width: 230px;
+    padding: 30px;
+    background: var(--paleColor);
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+}
+
+section#form .margin p.border {
+    border: 1px solid var(--paleColor);
+    padding: 30px;
+}
