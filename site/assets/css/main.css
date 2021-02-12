@@ -17,6 +17,7 @@
     --subBgColor: #ebf3f4;
     --conversionColor: #a8d991;
     --conversionColorAlt: #77BF56;
+    --red: #FC2C67;
     --shadow: rgba(0, 0, 0, .25);
     /*  */
     --animation-timing-s: .25s;
@@ -39,11 +40,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
+    color: var(--mainColor); /* h2 only has mainColor? or all titles? CHECK */
 }
 h2 {
     /* margin: 60px 0 25px 0; */
     margin: 0 0 25px 0;
-    color: var(--mainColor);
     font-size: 22px;
     line-height: 1.5em;
 }
@@ -52,6 +53,11 @@ h2.en {
     color: var(--subColor);
     font-size: 11px;
     letter-spacing: 3.5px;
+}
+@media (min-width: 1280px) {
+    h2.en {
+        margin: 0 0 20px 0;
+    }
 }
 h3 {
     margin: 40px 0 20px 0;
@@ -169,12 +175,16 @@ ul li.prev::before {
 }
 /* Grid */
 [class*=grid] {display: table;width: 100%}
-.grid-2 > div, .grid-2 > section {
+.grid-2 > * {
     width: 50%;
     float: left;
 }
-.grid-3 > *, .grid-6 > * {
-    width: 1fr;
+.grid-3 > * {
+    width: 33.3%;
+    float: left;
+}
+.grid-6 > * {
+    width: 16.66%;
     float: left;
 }
 .grid-2 > * { /* margin only for two first childs */
