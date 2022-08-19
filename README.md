@@ -5,7 +5,7 @@ This project is based in Jekyll, so, the demo project is inside **_site** folder
 * site
   * _site
 
-You can try a [demo](https://chiqui1234.github.io/1step/) here.
+You can try a [demo](https://chiqui1234ok.github.io/1step/) here.
 
 # Build
 
