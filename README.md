@@ -1,6 +1,6 @@
 # 1step
 
-This project is based in Jekyll, so, the demo project is inside **_site** folder.
+This project is based in Jekyll, so, the demo project is inside **/site/_site** folder.
 
 * site
   * _site
